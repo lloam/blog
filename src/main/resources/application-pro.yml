@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据库连接为服务器
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      # 实体类更改数据库表结构也会相应更改，生产环境实体变动数据库不变动
+      ddl-auto: none
+    show-sql: true
+
+# 日志级别
+logging:
+  level:
+    # 将日志级别升高
+    root: warn
+    # 自定义的日志级别为 debug
+    com.mao: info
+  # 日志文件路径
+  file:
+    name: log/blog-pro.log
+
+server:
+  port: 8081
