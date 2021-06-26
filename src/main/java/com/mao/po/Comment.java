@@ -3,7 +3,6 @@ package com.mao.po;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -35,7 +34,7 @@ public class Comment {
     @ManyToOne
     private Blog blog;
 
-    // comment 自关联
+    // comment 自关联，将回复的评论看成是一条记录，那么就是一对多的关系
     @OneToMany(mappedBy = "parentComment")
     private List<Comment> replyComments = new ArrayList<>();
     @ManyToOne
