@@ -48,11 +48,10 @@ public class IndexController {
         model.addAttribute("query",query);
         return "search";
     }
-
     @GetMapping("/blog/{id}")
     public String blog(@PathVariable("id")Integer id,
                        Model model){
-        model.addAttribute("blog",blogService.getBlog(id));
+        model.addAttribute("blog",blogService.getAndConvert(id));
         return "blog";
     }
 }

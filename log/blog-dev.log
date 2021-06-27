@@ -18298,3 +18298,2610 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/frag
 	at java.lang.Thread.run(Thread.java:748)
 
 2021-06-27 19:28:39.850 ERROR 11136 --- [http-nio-8080-exec-9] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog/5] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-06-27 20:01:09.873  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : Starting BlogApplication using Java 1.8.0_151 on X6X8-20190310CV with PID 1288 (C:\Users\Administrator\Desktop\myBlog\blog\target\classes started by Administrator in C:\Users\Administrator\Desktop\myBlog\blog)
+2021-06-27 20:01:09.875 DEBUG 1288 --- [restartedMain] com.mao.BlogApplication                  : Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-06-27 20:01:09.876  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : The following profiles are active: dev
+2021-06-27 20:01:09.911  INFO 1288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-27 20:01:09.911  INFO 1288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-27 20:01:10.532  INFO 1288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-27 20:01:10.625  INFO 1288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 4 JPA repository interfaces.
+2021-06-27 20:01:11.571  INFO 1288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-27 20:01:11.579  INFO 1288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-27 20:01:11.580  INFO 1288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-06-27 20:01:11.582  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-06-27 20:01:11.582  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2021-06-27 20:01:11.582  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2021-06-27 20:01:11.582  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-27 20:01:11.605  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2021-06-27 20:01:11.697  INFO 1288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-27 20:01:11.698  INFO 1288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1787 ms
+2021-06-27 20:01:11.869  INFO 1288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-27 20:01:11.915  INFO 1288 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-27 20:01:12.021  INFO 1288 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-27 20:01:12.113  INFO 1288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-27 20:01:12.468  INFO 1288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-27 20:01:12.486  INFO 1288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-27 20:01:13.404  INFO 1288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-27 20:01:13.413  INFO 1288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 20:01:14.529  INFO 1288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-27 20:01:15.147  INFO 1288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-27 20:01:15.179  INFO 1288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-27 20:01:15.188  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : Started BlogApplication in 5.749 seconds (JVM running for 6.68)
+2021-06-27 20:01:16.734  INFO 1288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-27 20:01:16.735  INFO 1288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-27 20:01:16.736  INFO 1288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-27 20:01:16.767  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:01:16.905  WARN 1288 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-27 20:01:16.937  WARN 1288 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-27 20:01:17.034  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:01:18.968  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/22, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:01:19.048  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:01:19.077 ERROR 1288 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1396)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Error resolving template [/fragment/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "blog" - line 705, col 15)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/fragment/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "blog" - line 705, col 15)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+
+2021-06-27 20:01:19.086 ERROR 1288 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/fragment/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "blog" - line 705, col 15)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1396)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-06-27 20:01:19.115 ERROR 1288 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog/22] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-06-27 20:02:06.662  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/22, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:02:06.679  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:03:06.816  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/22, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:03:06.833  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:03:51.738  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/20, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[20, {}])
+2021-06-27 20:03:51.751  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:03:56.374  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:03:56.395  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:03:57.651  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/6, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[6, {}])
+2021-06-27 20:03:57.664  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:04:58.500  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/6, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[6, {}])
+2021-06-27 20:04:58.514  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:07:42.451  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/5, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[5, {}])
+2021-06-27 20:07:42.463  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:07:53.996  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/6, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[6, {}])
+2021-06-27 20:07:54.006  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:07:58.777  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/6, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[6, {}])
+2021-06-27 20:07:58.788  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:08:01.761  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/5, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[5, {}])
+2021-06-27 20:08:01.772  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:08:29.692  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/5, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[5, {}])
+2021-06-27 20:08:29.703  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:08:32.751  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:08:32.787  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:08:33.760  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/22, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:08:33.776  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:10:47.935  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.LoginController.loginPage, args=[])
+2021-06-27 20:10:47.940  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : admin/login
+2021-06-27 20:10:52.016  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.LoginController.login, args=[limao, 111111, org.apache.catalina.session.StandardSessionFacade@766c94a7, {}])
+2021-06-27 20:10:52.031  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : admin/index
+2021-06-27 20:10:53.481  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:10:53.503  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:10:55.175  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/22/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[22, {}])
+2021-06-27 20:10:55.211  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:15:33.512  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.input, args=[{}])
+2021-06-27 20:15:33.528  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:16:52.202  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.addOrUpdateBlog, args=[Blog(id=null, title=Ribbon：负载均衡(基于客户端), content=## 6. Ribbon：负载均衡(基于客户端)
+
+### 6.1 负载均衡以及Ribbon
+
+**Ribbon是什么？**
+
+- Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。
+- 简单的说，Ribbon 是 Netflix 发布的开源项目，主要功能是提供客户端的软件负载均衡算法，将 Netflix 的中间层服务连接在一起。Ribbon 的客户端组件提供一系列完整的配置项，如：连接超时、重试等。简单的说，就是在配置文件中列出 LoadBalancer (简称LB：负载均衡) 后面所有的及其，Ribbon 会自动的帮助你基于某种规则 (如简单轮询，随机连接等等) 去连接这些机器。我们也容易使用 Ribbon 实现自定义的负载均衡算法！
+- 面试造飞机，工作拧螺丝
+
+**Ribbon能干嘛？**
+
+- LB，即负载均衡 (LoadBalancer) ，在微服务或分布式集群中经常用的一种应用。
+- 负载均衡简单的说就是**将用户的请求平摊的分配到多个服务上，从而达到系统的HA (高用)。**
+- 常见的负载均衡软件有 Nginx、Lvs 等等。
+- Dubbo、SpringCloud 中均给我们提供了负载均衡，**SpringCloud 的负载均衡算法可以自定义**。
+- 负载均衡简单分类：
+  - 集中式LB
+    - 即在服务的提供方和消费方之间使用独立的LB设施，如Nginx，由该设施负责把访问请求通过某种策略转发至服务的提供方！
+  - 进程式LB
+    - 将LB逻辑集成到消费方，消费方从服务注册中心获知有哪些地址可用，然后自己再从这些地址中选出一个合适的服务器。
+    - <font color=red>Ribbon 就属于进程内LB</font>，它只是一个类库，集成于消费方进程，消费方通过它来获取到服务提供方的地址！
+
+### 6.2 集成Ribbon
+
+- **springcloud-consumer-dept-80**向pom.xml中添加Ribbon和Eureka依赖，这里Ribbon我使用netflix-ribbon
+
+  ```xml
+          <!--Ribbon-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+              <version>2.2.6.RELEASE</version>
+          </dependency>
+          <!--eureka-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-eureka</artifactId>
+              <version>1.4.7.RELEASE</version>
+          </dependency>
+  ```
+  
+- 在application.yml文件中配置Eureka
+
+  ```yaml
+  server:
+    port: 80
+  
+  # Eureka配置
+  eureka:
+    client:
+      register-with-eureka: false # 不想Eureka 中注册自己
+      service-url:
+        # 从哪个地方拿
+        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  ```
+
+- 主启动类加上@EnableEurekaClient注解，开启Eureka
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  ```
+
+- 自定义Spring配置类：ConfigBean.java 配置负载均衡实现RestTemplate，只需一个注解搞定Ribbon实现负载均衡
+
+  ```java
+  @Configuration
+  public class ConfigBean {// @Configuration -- spring applicationContext.xml
+  
+      // 配置负载均衡 实现RestTemplate
+      @Bean
+      @LoadBalanced // Ribbon实现负载均衡
+      public RestTemplate getRestTemplate(){
+          return new RestTemplate();
+      }
+  
+  }
+  ```
+
+  
+
+- 在DeptConsumerController中之前是将获取服务的地址写死了，我们应该用一个变量来访问服务提供者，通过服务名来访问
+
+  ```java
+      @Autowired
+      private RestTemplate restTemplate; // 提供多种便捷访问远程 http 服务的方法，简单的 Restful 服务模板
+  
+      // Ribbon ,我们这里的地址，应该是一个变量，通过服务名来访问
+  //    private static final String REST_URL_PREFIX = "http://localhost:8001";
+      private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
+      //http://localhost:8001/dept/list
+  ```
+
+  `我们通过集群仍然能够访问到服务`
+
+![image-20210506221557204](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221557204.png)
+
+
+
+​	![image-20210506221707950](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221707950.png)
+
+### 6.3 使用Ribbon实现负载均衡
+
+**1.实现负载均衡**
+
+- 流程图：
+
+  ![image-20210506221811781](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221811781.png)
+
+- 创建db02和db03数据库(一样的)
+
+  ```mysql
+  CREATE DATABASE /*!32312 IF NOT EXISTS*/`db02` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+  
+  USE `db02`;
+  
+  /*Table structure for table `dept` */
+  
+  DROP TABLE IF EXISTS `dept`;
+  
+  CREATE TABLE `dept` (
+    `deptno` BIGINT NOT NULL AUTO_INCREMENT,
+    `dname` VARCHAR(60) DEFAULT NULL,
+    `db_source` VARCHAR(60) DEFAULT NULL,
+    PRIMARY KEY (`deptno`)
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='部门表';
+  
+  /*Data for the table `dept` */
+  
+  INSERT  INTO `dept`(`deptno`,`dname`,`db_source`) VALUES (1,'开发部','db01'),(2,'人事部','db01'),(3,'财务部','db01'),(4,'市场部','db01'),(5,'运维部','db01');
+  
+  INSERT INTO db01.dept (dname, db_source) VALUES('开发部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('人事部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('财务部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('市场部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('运维部',DATABASE());
+  SELECT * FROM dept;
+  ```
+
+- 新建两个服务提供者Moudle：springcloud-provider-dept-8002、springcloud-provider-dept-8003
+
+- 参照springcloud-provider-dept-8001 依次为另外两个Moudle添加pom.xml依赖 、resourece下的mybatis和application.yml配置，Java代码
+
+  ==三个服务（spring.application.name）的名称必须一致，本质就是三个服务连接的数据库分别是db01,db02,db03==
+
+- 启动所有服务测试(根据自身电脑配置决定启动服务的个数)，访问http://eureka7001.com:7001/查看结果
+
+  ![image-20210506222114631](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222114631.png)
+
+- 测试访问http://localhost/consumer/dept/list 这时候随机访问的是服务提供者，可能是8001，也可能是8002，8003、
+
+  此时是8002
+
+  ![image-20210506222237427](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222237427.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8003
+
+  ![image-20210506222315286](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222315286.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8001
+
+  ![image-20210506222344137](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222344137.png)
+
+以上这种**每次访问http://localhost/consumer/dept/list随机访问集群中某个服务提供者，这种情况叫做轮询**，轮询算法在SpringCloud中可以自定义。
+
+**2.如何切换或者自定义规则呢？**
+
+- 在springcloud-provider-dept-80模块下的ConfigBean中进行配置，切换使用不同的规则
+
+  ```java
+  @Configuration
+  public class ConfigBean {//@Configuration -- spring  applicationContext.xml
+  
+      /**
+       * IRule:
+       * RoundRobinRule 轮询
+       * RandomRule 随机
+       * AvailabilityFilteringRule ： 会先过滤掉，跳闸，访问故障的服务~，对剩下的进行轮询~
+       * RetryRule ： 会先按照轮询获取服务~，如果服务获取失败，则会在指定的时间内进行，重试
+       */
+      @LoadBalanced //配置负载均衡实现RestTemplate
+      @Bean
+      public RestTemplate getRestTemplate() {
+          return new RestTemplate();
+      }
+  
+      @Bean
+      public IRule myRule(){
+          return new RandomRule();//使用随机规则
+      }
+  }
+  
+  ```
+
+- 也可以自定义规则，在myRule包下自定义一个配置类MyRule.java，注意：**<font color=red>该包不要和主启动类同级，要跟主启动类所在包同级</font>**：
+  ![image-20210507210206544](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210507210206544.png)
+
+- MyRule.java
+
+  ```java
+  @Configuration
+  public class MyRule {
+  
+      @Bean
+      public IRule myRule() {
+          return new MyRandomRule();//默认是轮循，现在我们自定义
+      }
+  }
+  ```
+
+- 主启动类开启负载均衡并指定自定义的MyRule配置类
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  // 在微服务启动的时候就能去加载我们自定义Ribbon类
+  @RibbonClient(name = "SPRINGCLOUD-PROVIDER-DEPT",configuration = LloamRule.class)// 开启负载均衡，并指定自定义的规则
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  }
+  ```
+
+- 自定义的规则(这里我们参考Ribbon中默认的规则代码自己稍微改动)：MyRandomRule.java
+
+  ```java
+  /*
+   *
+   * Copyright 2013 Netflix, Inc.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   *
+   */
+  package com.mao.myRule;
+  
+  import com.netflix.client.config.IClientConfig;
+  import com.netflix.loadbalancer.AbstractLoadBalancerRule;
+  import com.netflix.loadbalancer.ILoadBalancer;
+  import com.netflix.loadbalancer.Server;
+  
+  import java.util.List;
+  import java.util.concurrent.ThreadLocalRandom;
+  
+  public class LloamRandomRule extends AbstractLoadBalancerRule {
+  
+      /*自定义算法*/
+      // 每个服务，访问5次，访问完5次，换下一个服务（假设服务有3个）
+      // 每个服务的访问次数，total = 0，默认为0，如果=5，则指向下一个服务节点
+      // 当前提供的服务下标，currentIndex = 0，默认0，如果total = 5，则total重置为0，index+1，
+  
+      private int total = 0;// 被调用的次数
+      private int currentIndex = 0; // 当前是谁在提供服务
+  
+      // @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE")
+      public Server choose(ILoadBalancer lb, Object key) {
+          if (lb == null) {
+              return null;
+          }
+          Server server = null;
+  
+          while (server == null) {
+              if (Thread.interrupted()) {
+                  return null;
+              }
+              List<Server> upList = lb.getReachableServers(); // 获取还活着的服务
+              List<Server> allList = lb.getAllServers(); // 获取全部的服务
+  
+              int serverCount = allList.size();
+              if (serverCount == 0) {
+                  return null;
+              }
+  
+  //            int index = chooseRandomInt(serverCount); // 生成区间随机数
+  //            server = upList.get(index); // 从活着的服务中随机获取一个
+  
+              // ==============================自定义算法================================
+  
+              if(total < 5){
+                  server = upList.get(currentIndex);
+                  total++;
+              }else {
+                  total = 0;
+                  currentIndex++;
+                  if(currentIndex >= upList.size()){
+                      currentIndex = 0;
+                  }
+                  server = upList.get(currentIndex); // 从活着的服务中心，获取指定的服务来进行操作
+                  total++;
+              }
+  
+              if (server == null) {
+                  Thread.yield();
+                  continue;
+              }
+  
+              if (server.isAlive()) {
+                  return (server);
+              }
+              server = null;
+              Thread.yield();
+          }
+  
+          return server;
+          // ========================================================================
+      }
+  
+    protected int chooseRandomInt(int serverCount) {
+          return ThreadLocalRandom.current().nextInt(serverCount);
+      }
+  
+      @Override
+      public Server choose(Object key) {
+          return choose(getLoadBalancer(), key);
+      }
+  
+      @Override
+      public void initWithNiwsConfig(IClientConfig clientConfig) {
+          // TODO Auto-generated method stub
+  
+      }
+  }, firstPicture=https://picsum.photos/seed/picsum/800/451, flag=, view=null, appreciation=true, shareStatement=true, commentable=true, published=true, recommend=true, description=Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。, createTime=null, updateTime=null, type=Type(id=6, name=null, blogs=[]), tags=[], user=null, comments=[], tagIds=7,8), {}, org.apache.catalina.session.StandardSessionFacade@766c94a7])
+2021-06-27 20:16:52.969  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Result : redirect:/admin/blogs
+2021-06-27 20:16:52.992  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {message=操作成功, blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:16:53.017  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:16:57.707  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:16:57.741  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:17:01.243  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/23, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:17:01.258  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:17:44.375  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/22/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[22, {}])
+2021-06-27 20:17:44.393  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:17:57.373  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/23/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[23, {}])
+2021-06-27 20:17:57.395  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:18:15.313  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.addOrUpdateBlog, args=[Blog(id=23, title=Ribbon：负载均衡(基于客户端), content=## 6. Ribbon：负载均衡(基于客户端)
+
+### 6.1 负载均衡以及Ribbon
+
+**Ribbon是什么？**
+
+- Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。
+- 简单的说，Ribbon 是 Netflix 发布的开源项目，主要功能是提供客户端的软件负载均衡算法，将 Netflix 的中间层服务连接在一起。Ribbon 的客户端组件提供一系列完整的配置项，如：连接超时、重试等。简单的说，就是在配置文件中列出 LoadBalancer (简称LB：负载均衡) 后面所有的及其，Ribbon 会自动的帮助你基于某种规则 (如简单轮询，随机连接等等) 去连接这些机器。我们也容易使用 Ribbon 实现自定义的负载均衡算法！
+- 面试造飞机，工作拧螺丝
+
+**Ribbon能干嘛？**
+
+- LB，即负载均衡 (LoadBalancer) ，在微服务或分布式集群中经常用的一种应用。
+- 负载均衡简单的说就是**将用户的请求平摊的分配到多个服务上，从而达到系统的HA (高用)。**
+- 常见的负载均衡软件有 Nginx、Lvs 等等。
+- Dubbo、SpringCloud 中均给我们提供了负载均衡，**SpringCloud 的负载均衡算法可以自定义**。
+- 负载均衡简单分类：
+  - 集中式LB
+    - 即在服务的提供方和消费方之间使用独立的LB设施，如Nginx，由该设施负责把访问请求通过某种策略转发至服务的提供方！
+  - 进程式LB
+    - 将LB逻辑集成到消费方，消费方从服务注册中心获知有哪些地址可用，然后自己再从这些地址中选出一个合适的服务器。
+    - <font color=red>Ribbon 就属于进程内LB</font>，它只是一个类库，集成于消费方进程，消费方通过它来获取到服务提供方的地址！
+
+### 6.2 集成Ribbon
+
+- **springcloud-consumer-dept-80**向pom.xml中添加Ribbon和Eureka依赖，这里Ribbon我使用netflix-ribbon
+
+  ```xml
+          <!--Ribbon-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+              <version>2.2.6.RELEASE</version>
+          </dependency>
+          <!--eureka-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-eureka</artifactId>
+              <version>1.4.7.RELEASE</version>
+          </dependency>
+  ```
+  
+- 在application.yml文件中配置Eureka
+
+  ```yaml
+  server:
+    port: 80
+  
+  # Eureka配置
+  eureka:
+    client:
+      register-with-eureka: false # 不想Eureka 中注册自己
+      service-url:
+        # 从哪个地方拿
+        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  ```
+
+- 主启动类加上@EnableEurekaClient注解，开启Eureka
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  ```
+
+- 自定义Spring配置类：ConfigBean.java 配置负载均衡实现RestTemplate，只需一个注解搞定Ribbon实现负载均衡
+
+  ```java
+  @Configuration
+  public class ConfigBean {// @Configuration -- spring applicationContext.xml
+  
+      // 配置负载均衡 实现RestTemplate
+      @Bean
+      @LoadBalanced // Ribbon实现负载均衡
+      public RestTemplate getRestTemplate(){
+          return new RestTemplate();
+      }
+  
+  }
+  ```
+
+  
+
+- 在DeptConsumerController中之前是将获取服务的地址写死了，我们应该用一个变量来访问服务提供者，通过服务名来访问
+
+  ```java
+      @Autowired
+      private RestTemplate restTemplate; // 提供多种便捷访问远程 http 服务的方法，简单的 Restful 服务模板
+  
+      // Ribbon ,我们这里的地址，应该是一个变量，通过服务名来访问
+  //    private static final String REST_URL_PREFIX = "http://localhost:8001";
+      private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
+      //http://localhost:8001/dept/list
+  ```
+
+  `我们通过集群仍然能够访问到服务`
+
+![image-20210506221557204](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221557204.png)
+
+
+
+​	![image-20210506221707950](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221707950.png)
+
+### 6.3 使用Ribbon实现负载均衡
+
+**1.实现负载均衡**
+
+- 流程图：
+
+  ![image-20210506221811781](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221811781.png)
+
+- 创建db02和db03数据库(一样的)
+
+  ```mysql
+  CREATE DATABASE /*!32312 IF NOT EXISTS*/`db02` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+  
+  USE `db02`;
+  
+  /*Table structure for table `dept` */
+  
+  DROP TABLE IF EXISTS `dept`;
+  
+  CREATE TABLE `dept` (
+    `deptno` BIGINT NOT NULL AUTO_INCREMENT,
+    `dname` VARCHAR(60) DEFAULT NULL,
+    `db_source` VARCHAR(60) DEFAULT NULL,
+    PRIMARY KEY (`deptno`)
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='部门表';
+  
+  /*Data for the table `dept` */
+  
+  INSERT  INTO `dept`(`deptno`,`dname`,`db_source`) VALUES (1,'开发部','db01'),(2,'人事部','db01'),(3,'财务部','db01'),(4,'市场部','db01'),(5,'运维部','db01');
+  
+  INSERT INTO db01.dept (dname, db_source) VALUES('开发部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('人事部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('财务部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('市场部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('运维部',DATABASE());
+  SELECT * FROM dept;
+  ```
+
+- 新建两个服务提供者Moudle：springcloud-provider-dept-8002、springcloud-provider-dept-8003
+
+- 参照springcloud-provider-dept-8001 依次为另外两个Moudle添加pom.xml依赖 、resourece下的mybatis和application.yml配置，Java代码
+
+  ==三个服务（spring.application.name）的名称必须一致，本质就是三个服务连接的数据库分别是db01,db02,db03==
+
+- 启动所有服务测试(根据自身电脑配置决定启动服务的个数)，访问http://eureka7001.com:7001/查看结果
+
+  ![image-20210506222114631](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222114631.png)
+
+- 测试访问http://localhost/consumer/dept/list 这时候随机访问的是服务提供者，可能是8001，也可能是8002，8003、
+
+  此时是8002
+
+  ![image-20210506222237427](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222237427.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8003
+
+  ![image-20210506222315286](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222315286.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8001
+
+  ![image-20210506222344137](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222344137.png)
+
+以上这种**每次访问http://localhost/consumer/dept/list随机访问集群中某个服务提供者，这种情况叫做轮询**，轮询算法在SpringCloud中可以自定义。
+
+**2.如何切换或者自定义规则呢？**
+
+- 在springcloud-provider-dept-80模块下的ConfigBean中进行配置，切换使用不同的规则
+
+  ```java
+  @Configuration
+  public class ConfigBean {//@Configuration -- spring  applicationContext.xml
+  
+      /**
+       * IRule:
+       * RoundRobinRule 轮询
+       * RandomRule 随机
+       * AvailabilityFilteringRule ： 会先过滤掉，跳闸，访问故障的服务~，对剩下的进行轮询~
+       * RetryRule ： 会先按照轮询获取服务~，如果服务获取失败，则会在指定的时间内进行，重试
+       */
+      @LoadBalanced //配置负载均衡实现RestTemplate
+      @Bean
+      public RestTemplate getRestTemplate() {
+          return new RestTemplate();
+      }
+  
+      @Bean
+      public IRule myRule(){
+          return new RandomRule();//使用随机规则
+      }
+  }
+  
+  ```
+
+- 也可以自定义规则，在myRule包下自定义一个配置类MyRule.java，注意：**<font color=red>该包不要和主启动类同级，要跟主启动类所在包同级</font>**：
+  ![image-20210507210206544](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210507210206544.png)
+
+- MyRule.java
+
+  ```java
+  @Configuration
+  public class MyRule {
+  
+      @Bean
+      public IRule myRule() {
+          return new MyRandomRule();//默认是轮循，现在我们自定义
+      }
+  }
+  ```
+
+- 主启动类开启负载均衡并指定自定义的MyRule配置类
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  // 在微服务启动的时候就能去加载我们自定义Ribbon类
+  @RibbonClient(name = "SPRINGCLOUD-PROVIDER-DEPT",configuration = LloamRule.class)// 开启负载均衡，并指定自定义的规则
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  }
+  ```
+
+- 自定义的规则(这里我们参考Ribbon中默认的规则代码自己稍微改动)：MyRandomRule.java
+
+  ```java
+  /*
+   *
+   * Copyright 2013 Netflix, Inc.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   *
+   */
+  package com.mao.myRule;
+  
+  import com.netflix.client.config.IClientConfig;
+  import com.netflix.loadbalancer.AbstractLoadBalancerRule;
+  import com.netflix.loadbalancer.ILoadBalancer;
+  import com.netflix.loadbalancer.Server;
+  
+  import java.util.List;
+  import java.util.concurrent.ThreadLocalRandom;
+  
+  public class LloamRandomRule extends AbstractLoadBalancerRule {
+  
+      /*自定义算法*/
+      // 每个服务，访问5次，访问完5次，换下一个服务（假设服务有3个）
+      // 每个服务的访问次数，total = 0，默认为0，如果=5，则指向下一个服务节点
+      // 当前提供的服务下标，currentIndex = 0，默认0，如果total = 5，则total重置为0，index+1，
+  
+      private int total = 0;// 被调用的次数
+      private int currentIndex = 0; // 当前是谁在提供服务
+  
+      // @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE")
+      public Server choose(ILoadBalancer lb, Object key) {
+          if (lb == null) {
+              return null;
+          }
+          Server server = null;
+  
+          while (server == null) {
+              if (Thread.interrupted()) {
+                  return null;
+              }
+              List<Server> upList = lb.getReachableServers(); // 获取还活着的服务
+              List<Server> allList = lb.getAllServers(); // 获取全部的服务
+  
+              int serverCount = allList.size();
+              if (serverCount == 0) {
+                  return null;
+              }
+  
+  //            int index = chooseRandomInt(serverCount); // 生成区间随机数
+  //            server = upList.get(index); // 从活着的服务中随机获取一个
+  
+              // ==============================自定义算法================================
+  
+              if(total < 5){
+                  server = upList.get(currentIndex);
+                  total++;
+              }else {
+                  total = 0;
+                  currentIndex++;
+                  if(currentIndex >= upList.size()){
+                      currentIndex = 0;
+                  }
+                  server = upList.get(currentIndex); // 从活着的服务中心，获取指定的服务来进行操作
+                  total++;
+              }
+  
+              if (server == null) {
+                  Thread.yield();
+                  continue;
+              }
+  
+              if (server.isAlive()) {
+                  return (server);
+              }
+              server = null;
+              Thread.yield();
+          }
+  
+          return server;
+          // ========================================================================
+      }
+  
+    protected int chooseRandomInt(int serverCount) {
+          return ThreadLocalRandom.current().nextInt(serverCount);
+      }
+  
+      @Override
+      public Server choose(Object key) {
+          return choose(getLoadBalancer(), key);
+      }
+  
+      @Override
+      public void initWithNiwsConfig(IClientConfig clientConfig) {
+          // TODO Auto-generated method stub
+  
+      }
+  }, firstPicture=https://picsum.photos/id/105/200/300, flag=, view=null, appreciation=true, shareStatement=true, commentable=true, published=true, recommend=true, description=Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。, createTime=null, updateTime=null, type=Type(id=6, name=null, blogs=[]), tags=[], user=null, comments=[], tagIds=7,8), {}, org.apache.catalina.session.StandardSessionFacade@766c94a7])
+2021-06-27 20:18:16.523  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : redirect:/admin/blogs
+2021-06-27 20:18:16.538  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {message=操作成功, blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:18:16.771  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:18:18.404  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/23, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:18:18.417  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:18:24.285  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/23/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[23, {}])
+2021-06-27 20:18:24.304  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:18:30.541  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/23, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:18:30.554  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:18:34.220  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:18:34.293  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:18:47.125  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.addOrUpdateBlog, args=[Blog(id=23, title=Ribbon：负载均衡(基于客户端), content=## 6. Ribbon：负载均衡(基于客户端)
+
+### 6.1 负载均衡以及Ribbon
+
+**Ribbon是什么？**
+
+- Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。
+- 简单的说，Ribbon 是 Netflix 发布的开源项目，主要功能是提供客户端的软件负载均衡算法，将 Netflix 的中间层服务连接在一起。Ribbon 的客户端组件提供一系列完整的配置项，如：连接超时、重试等。简单的说，就是在配置文件中列出 LoadBalancer (简称LB：负载均衡) 后面所有的及其，Ribbon 会自动的帮助你基于某种规则 (如简单轮询，随机连接等等) 去连接这些机器。我们也容易使用 Ribbon 实现自定义的负载均衡算法！
+- 面试造飞机，工作拧螺丝
+
+**Ribbon能干嘛？**
+
+- LB，即负载均衡 (LoadBalancer) ，在微服务或分布式集群中经常用的一种应用。
+- 负载均衡简单的说就是**将用户的请求平摊的分配到多个服务上，从而达到系统的HA (高用)。**
+- 常见的负载均衡软件有 Nginx、Lvs 等等。
+- Dubbo、SpringCloud 中均给我们提供了负载均衡，**SpringCloud 的负载均衡算法可以自定义**。
+- 负载均衡简单分类：
+  - 集中式LB
+    - 即在服务的提供方和消费方之间使用独立的LB设施，如Nginx，由该设施负责把访问请求通过某种策略转发至服务的提供方！
+  - 进程式LB
+    - 将LB逻辑集成到消费方，消费方从服务注册中心获知有哪些地址可用，然后自己再从这些地址中选出一个合适的服务器。
+    - <font color=red>Ribbon 就属于进程内LB</font>，它只是一个类库，集成于消费方进程，消费方通过它来获取到服务提供方的地址！
+
+### 6.2 集成Ribbon
+
+- **springcloud-consumer-dept-80**向pom.xml中添加Ribbon和Eureka依赖，这里Ribbon我使用netflix-ribbon
+
+  ```xml
+          <!--Ribbon-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+              <version>2.2.6.RELEASE</version>
+          </dependency>
+          <!--eureka-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-eureka</artifactId>
+              <version>1.4.7.RELEASE</version>
+          </dependency>
+  ```
+  
+- 在application.yml文件中配置Eureka
+
+  ```yaml
+  server:
+    port: 80
+  
+  # Eureka配置
+  eureka:
+    client:
+      register-with-eureka: false # 不想Eureka 中注册自己
+      service-url:
+        # 从哪个地方拿
+        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  ```
+
+- 主启动类加上@EnableEurekaClient注解，开启Eureka
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  ```
+
+- 自定义Spring配置类：ConfigBean.java 配置负载均衡实现RestTemplate，只需一个注解搞定Ribbon实现负载均衡
+
+  ```java
+  @Configuration
+  public class ConfigBean {// @Configuration -- spring applicationContext.xml
+  
+      // 配置负载均衡 实现RestTemplate
+      @Bean
+      @LoadBalanced // Ribbon实现负载均衡
+      public RestTemplate getRestTemplate(){
+          return new RestTemplate();
+      }
+  
+  }
+  ```
+
+  
+
+- 在DeptConsumerController中之前是将获取服务的地址写死了，我们应该用一个变量来访问服务提供者，通过服务名来访问
+
+  ```java
+      @Autowired
+      private RestTemplate restTemplate; // 提供多种便捷访问远程 http 服务的方法，简单的 Restful 服务模板
+  
+      // Ribbon ,我们这里的地址，应该是一个变量，通过服务名来访问
+  //    private static final String REST_URL_PREFIX = "http://localhost:8001";
+      private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
+      //http://localhost:8001/dept/list
+  ```
+
+  `我们通过集群仍然能够访问到服务`
+
+![image-20210506221557204](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221557204.png)
+
+
+
+​	![image-20210506221707950](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221707950.png)
+
+### 6.3 使用Ribbon实现负载均衡
+
+**1.实现负载均衡**
+
+- 流程图：
+
+  ![image-20210506221811781](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221811781.png)
+
+- 创建db02和db03数据库(一样的)
+
+  ```mysql
+  CREATE DATABASE /*!32312 IF NOT EXISTS*/`db02` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+  
+  USE `db02`;
+  
+  /*Table structure for table `dept` */
+  
+  DROP TABLE IF EXISTS `dept`;
+  
+  CREATE TABLE `dept` (
+    `deptno` BIGINT NOT NULL AUTO_INCREMENT,
+    `dname` VARCHAR(60) DEFAULT NULL,
+    `db_source` VARCHAR(60) DEFAULT NULL,
+    PRIMARY KEY (`deptno`)
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='部门表';
+  
+  /*Data for the table `dept` */
+  
+  INSERT  INTO `dept`(`deptno`,`dname`,`db_source`) VALUES (1,'开发部','db01'),(2,'人事部','db01'),(3,'财务部','db01'),(4,'市场部','db01'),(5,'运维部','db01');
+  
+  INSERT INTO db01.dept (dname, db_source) VALUES('开发部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('人事部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('财务部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('市场部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('运维部',DATABASE());
+  SELECT * FROM dept;
+  ```
+
+- 新建两个服务提供者Moudle：springcloud-provider-dept-8002、springcloud-provider-dept-8003
+
+- 参照springcloud-provider-dept-8001 依次为另外两个Moudle添加pom.xml依赖 、resourece下的mybatis和application.yml配置，Java代码
+
+  ==三个服务（spring.application.name）的名称必须一致，本质就是三个服务连接的数据库分别是db01,db02,db03==
+
+- 启动所有服务测试(根据自身电脑配置决定启动服务的个数)，访问http://eureka7001.com:7001/查看结果
+
+  ![image-20210506222114631](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222114631.png)
+
+- 测试访问http://localhost/consumer/dept/list 这时候随机访问的是服务提供者，可能是8001，也可能是8002，8003、
+
+  此时是8002
+
+  ![image-20210506222237427](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222237427.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8003
+
+  ![image-20210506222315286](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222315286.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8001
+
+  ![image-20210506222344137](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222344137.png)
+
+以上这种**每次访问http://localhost/consumer/dept/list随机访问集群中某个服务提供者，这种情况叫做轮询**，轮询算法在SpringCloud中可以自定义。
+
+**2.如何切换或者自定义规则呢？**
+
+- 在springcloud-provider-dept-80模块下的ConfigBean中进行配置，切换使用不同的规则
+
+  ```java
+  @Configuration
+  public class ConfigBean {//@Configuration -- spring  applicationContext.xml
+  
+      /**
+       * IRule:
+       * RoundRobinRule 轮询
+       * RandomRule 随机
+       * AvailabilityFilteringRule ： 会先过滤掉，跳闸，访问故障的服务~，对剩下的进行轮询~
+       * RetryRule ： 会先按照轮询获取服务~，如果服务获取失败，则会在指定的时间内进行，重试
+       */
+      @LoadBalanced //配置负载均衡实现RestTemplate
+      @Bean
+      public RestTemplate getRestTemplate() {
+          return new RestTemplate();
+      }
+  
+      @Bean
+      public IRule myRule(){
+          return new RandomRule();//使用随机规则
+      }
+  }
+  
+  ```
+
+- 也可以自定义规则，在myRule包下自定义一个配置类MyRule.java，注意：**<font color=red>该包不要和主启动类同级，要跟主启动类所在包同级</font>**：
+  ![image-20210507210206544](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210507210206544.png)
+
+- MyRule.java
+
+  ```java
+  @Configuration
+  public class MyRule {
+  
+      @Bean
+      public IRule myRule() {
+          return new MyRandomRule();//默认是轮循，现在我们自定义
+      }
+  }
+  ```
+
+- 主启动类开启负载均衡并指定自定义的MyRule配置类
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  // 在微服务启动的时候就能去加载我们自定义Ribbon类
+  @RibbonClient(name = "SPRINGCLOUD-PROVIDER-DEPT",configuration = LloamRule.class)// 开启负载均衡，并指定自定义的规则
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  }
+  ```
+
+- 自定义的规则(这里我们参考Ribbon中默认的规则代码自己稍微改动)：MyRandomRule.java
+
+  ```java
+  /*
+   *
+   * Copyright 2013 Netflix, Inc.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   *
+   */
+  package com.mao.myRule;
+  
+  import com.netflix.client.config.IClientConfig;
+  import com.netflix.loadbalancer.AbstractLoadBalancerRule;
+  import com.netflix.loadbalancer.ILoadBalancer;
+  import com.netflix.loadbalancer.Server;
+  
+  import java.util.List;
+  import java.util.concurrent.ThreadLocalRandom;
+  
+  public class LloamRandomRule extends AbstractLoadBalancerRule {
+  
+      /*自定义算法*/
+      // 每个服务，访问5次，访问完5次，换下一个服务（假设服务有3个）
+      // 每个服务的访问次数，total = 0，默认为0，如果=5，则指向下一个服务节点
+      // 当前提供的服务下标，currentIndex = 0，默认0，如果total = 5，则total重置为0，index+1，
+  
+      private int total = 0;// 被调用的次数
+      private int currentIndex = 0; // 当前是谁在提供服务
+  
+      // @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE")
+      public Server choose(ILoadBalancer lb, Object key) {
+          if (lb == null) {
+              return null;
+          }
+          Server server = null;
+  
+          while (server == null) {
+              if (Thread.interrupted()) {
+                  return null;
+              }
+              List<Server> upList = lb.getReachableServers(); // 获取还活着的服务
+              List<Server> allList = lb.getAllServers(); // 获取全部的服务
+  
+              int serverCount = allList.size();
+              if (serverCount == 0) {
+                  return null;
+              }
+  
+  //            int index = chooseRandomInt(serverCount); // 生成区间随机数
+  //            server = upList.get(index); // 从活着的服务中随机获取一个
+  
+              // ==============================自定义算法================================
+  
+              if(total < 5){
+                  server = upList.get(currentIndex);
+                  total++;
+              }else {
+                  total = 0;
+                  currentIndex++;
+                  if(currentIndex >= upList.size()){
+                      currentIndex = 0;
+                  }
+                  server = upList.get(currentIndex); // 从活着的服务中心，获取指定的服务来进行操作
+                  total++;
+              }
+  
+              if (server == null) {
+                  Thread.yield();
+                  continue;
+              }
+  
+              if (server.isAlive()) {
+                  return (server);
+              }
+              server = null;
+              Thread.yield();
+          }
+  
+          return server;
+          // ========================================================================
+      }
+  
+    protected int chooseRandomInt(int serverCount) {
+          return ThreadLocalRandom.current().nextInt(serverCount);
+      }
+  
+      @Override
+      public Server choose(Object key) {
+          return choose(getLoadBalancer(), key);
+      }
+  
+      @Override
+      public void initWithNiwsConfig(IClientConfig clientConfig) {
+          // TODO Auto-generated method stub
+  
+      }
+  }, firstPicture=https://picsum.photos/id/200/200/300, flag=, view=null, appreciation=true, shareStatement=true, commentable=true, published=true, recommend=true, description=Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。, createTime=null, updateTime=null, type=Type(id=6, name=null, blogs=[]), tags=[], user=null, comments=[], tagIds=7,8), {}, org.apache.catalina.session.StandardSessionFacade@766c94a7])
+2021-06-27 20:18:47.498  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : redirect:/admin/blogs
+2021-06-27 20:18:47.502  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {message=操作成功, blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:18:47.607  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:18:49.068  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:18:49.090  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:18:53.366  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/23/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[23, {}])
+2021-06-27 20:18:53.382  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:18:58.607 ERROR 1288 --- [http-nio-8080-exec-7] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
+
+org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'blog' on field 'published': rejected value []; codes [typeMismatch.blog.published,typeMismatch.published,typeMismatch.boolean,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blog.published,published]; arguments []; default message [published]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'boolean' for property 'published'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value []]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:172)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-06-27 20:18:58.608  WARN 1288 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'blog' on field 'published': rejected value []; codes [typeMismatch.blog.published,typeMismatch.published,typeMismatch.boolean,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blog.published,published]; arguments []; default message [published]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'boolean' for property 'published'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value []]]
+2021-06-27 20:19:04.038  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.addOrUpdateBlog, args=[Blog(id=23, title=Ribbon：负载均衡(基于客户端), content=## 6. Ribbon：负载均衡(基于客户端)
+
+### 6.1 负载均衡以及Ribbon
+
+**Ribbon是什么？**
+
+- Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。
+- 简单的说，Ribbon 是 Netflix 发布的开源项目，主要功能是提供客户端的软件负载均衡算法，将 Netflix 的中间层服务连接在一起。Ribbon 的客户端组件提供一系列完整的配置项，如：连接超时、重试等。简单的说，就是在配置文件中列出 LoadBalancer (简称LB：负载均衡) 后面所有的及其，Ribbon 会自动的帮助你基于某种规则 (如简单轮询，随机连接等等) 去连接这些机器。我们也容易使用 Ribbon 实现自定义的负载均衡算法！
+- 面试造飞机，工作拧螺丝
+
+**Ribbon能干嘛？**
+
+- LB，即负载均衡 (LoadBalancer) ，在微服务或分布式集群中经常用的一种应用。
+- 负载均衡简单的说就是**将用户的请求平摊的分配到多个服务上，从而达到系统的HA (高用)。**
+- 常见的负载均衡软件有 Nginx、Lvs 等等。
+- Dubbo、SpringCloud 中均给我们提供了负载均衡，**SpringCloud 的负载均衡算法可以自定义**。
+- 负载均衡简单分类：
+  - 集中式LB
+    - 即在服务的提供方和消费方之间使用独立的LB设施，如Nginx，由该设施负责把访问请求通过某种策略转发至服务的提供方！
+  - 进程式LB
+    - 将LB逻辑集成到消费方，消费方从服务注册中心获知有哪些地址可用，然后自己再从这些地址中选出一个合适的服务器。
+    - <font color=red>Ribbon 就属于进程内LB</font>，它只是一个类库，集成于消费方进程，消费方通过它来获取到服务提供方的地址！
+
+### 6.2 集成Ribbon
+
+- **springcloud-consumer-dept-80**向pom.xml中添加Ribbon和Eureka依赖，这里Ribbon我使用netflix-ribbon
+
+  ```xml
+          <!--Ribbon-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+              <version>2.2.6.RELEASE</version>
+          </dependency>
+          <!--eureka-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-eureka</artifactId>
+              <version>1.4.7.RELEASE</version>
+          </dependency>
+  ```
+  
+- 在application.yml文件中配置Eureka
+
+  ```yaml
+  server:
+    port: 80
+  
+  # Eureka配置
+  eureka:
+    client:
+      register-with-eureka: false # 不想Eureka 中注册自己
+      service-url:
+        # 从哪个地方拿
+        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  ```
+
+- 主启动类加上@EnableEurekaClient注解，开启Eureka
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  ```
+
+- 自定义Spring配置类：ConfigBean.java 配置负载均衡实现RestTemplate，只需一个注解搞定Ribbon实现负载均衡
+
+  ```java
+  @Configuration
+  public class ConfigBean {// @Configuration -- spring applicationContext.xml
+  
+      // 配置负载均衡 实现RestTemplate
+      @Bean
+      @LoadBalanced // Ribbon实现负载均衡
+      public RestTemplate getRestTemplate(){
+          return new RestTemplate();
+      }
+  
+  }
+  ```
+
+  
+
+- 在DeptConsumerController中之前是将获取服务的地址写死了，我们应该用一个变量来访问服务提供者，通过服务名来访问
+
+  ```java
+      @Autowired
+      private RestTemplate restTemplate; // 提供多种便捷访问远程 http 服务的方法，简单的 Restful 服务模板
+  
+      // Ribbon ,我们这里的地址，应该是一个变量，通过服务名来访问
+  //    private static final String REST_URL_PREFIX = "http://localhost:8001";
+      private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
+      //http://localhost:8001/dept/list
+  ```
+
+  `我们通过集群仍然能够访问到服务`
+
+![image-20210506221557204](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221557204.png)
+
+
+
+​	![image-20210506221707950](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221707950.png)
+
+### 6.3 使用Ribbon实现负载均衡
+
+**1.实现负载均衡**
+
+- 流程图：
+
+  ![image-20210506221811781](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221811781.png)
+
+- 创建db02和db03数据库(一样的)
+
+  ```mysql
+  CREATE DATABASE /*!32312 IF NOT EXISTS*/`db02` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+  
+  USE `db02`;
+  
+  /*Table structure for table `dept` */
+  
+  DROP TABLE IF EXISTS `dept`;
+  
+  CREATE TABLE `dept` (
+    `deptno` BIGINT NOT NULL AUTO_INCREMENT,
+    `dname` VARCHAR(60) DEFAULT NULL,
+    `db_source` VARCHAR(60) DEFAULT NULL,
+    PRIMARY KEY (`deptno`)
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='部门表';
+  
+  /*Data for the table `dept` */
+  
+  INSERT  INTO `dept`(`deptno`,`dname`,`db_source`) VALUES (1,'开发部','db01'),(2,'人事部','db01'),(3,'财务部','db01'),(4,'市场部','db01'),(5,'运维部','db01');
+  
+  INSERT INTO db01.dept (dname, db_source) VALUES('开发部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('人事部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('财务部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('市场部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('运维部',DATABASE());
+  SELECT * FROM dept;
+  ```
+
+- 新建两个服务提供者Moudle：springcloud-provider-dept-8002、springcloud-provider-dept-8003
+
+- 参照springcloud-provider-dept-8001 依次为另外两个Moudle添加pom.xml依赖 、resourece下的mybatis和application.yml配置，Java代码
+
+  ==三个服务（spring.application.name）的名称必须一致，本质就是三个服务连接的数据库分别是db01,db02,db03==
+
+- 启动所有服务测试(根据自身电脑配置决定启动服务的个数)，访问http://eureka7001.com:7001/查看结果
+
+  ![image-20210506222114631](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222114631.png)
+
+- 测试访问http://localhost/consumer/dept/list 这时候随机访问的是服务提供者，可能是8001，也可能是8002，8003、
+
+  此时是8002
+
+  ![image-20210506222237427](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222237427.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8003
+
+  ![image-20210506222315286](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222315286.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8001
+
+  ![image-20210506222344137](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222344137.png)
+
+以上这种**每次访问http://localhost/consumer/dept/list随机访问集群中某个服务提供者，这种情况叫做轮询**，轮询算法在SpringCloud中可以自定义。
+
+**2.如何切换或者自定义规则呢？**
+
+- 在springcloud-provider-dept-80模块下的ConfigBean中进行配置，切换使用不同的规则
+
+  ```java
+  @Configuration
+  public class ConfigBean {//@Configuration -- spring  applicationContext.xml
+  
+      /**
+       * IRule:
+       * RoundRobinRule 轮询
+       * RandomRule 随机
+       * AvailabilityFilteringRule ： 会先过滤掉，跳闸，访问故障的服务~，对剩下的进行轮询~
+       * RetryRule ： 会先按照轮询获取服务~，如果服务获取失败，则会在指定的时间内进行，重试
+       */
+      @LoadBalanced //配置负载均衡实现RestTemplate
+      @Bean
+      public RestTemplate getRestTemplate() {
+          return new RestTemplate();
+      }
+  
+      @Bean
+      public IRule myRule(){
+          return new RandomRule();//使用随机规则
+      }
+  }
+  
+  ```
+
+- 也可以自定义规则，在myRule包下自定义一个配置类MyRule.java，注意：**<font color=red>该包不要和主启动类同级，要跟主启动类所在包同级</font>**：
+  ![image-20210507210206544](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210507210206544.png)
+
+- MyRule.java
+
+  ```java
+  @Configuration
+  public class MyRule {
+  
+      @Bean
+      public IRule myRule() {
+          return new MyRandomRule();//默认是轮循，现在我们自定义
+      }
+  }
+  ```
+
+- 主启动类开启负载均衡并指定自定义的MyRule配置类
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  // 在微服务启动的时候就能去加载我们自定义Ribbon类
+  @RibbonClient(name = "SPRINGCLOUD-PROVIDER-DEPT",configuration = LloamRule.class)// 开启负载均衡，并指定自定义的规则
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  }
+  ```
+
+- 自定义的规则(这里我们参考Ribbon中默认的规则代码自己稍微改动)：MyRandomRule.java
+
+  ```java
+  /*
+   *
+   * Copyright 2013 Netflix, Inc.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   *
+   */
+  package com.mao.myRule;
+  
+  import com.netflix.client.config.IClientConfig;
+  import com.netflix.loadbalancer.AbstractLoadBalancerRule;
+  import com.netflix.loadbalancer.ILoadBalancer;
+  import com.netflix.loadbalancer.Server;
+  
+  import java.util.List;
+  import java.util.concurrent.ThreadLocalRandom;
+  
+  public class LloamRandomRule extends AbstractLoadBalancerRule {
+  
+      /*自定义算法*/
+      // 每个服务，访问5次，访问完5次，换下一个服务（假设服务有3个）
+      // 每个服务的访问次数，total = 0，默认为0，如果=5，则指向下一个服务节点
+      // 当前提供的服务下标，currentIndex = 0，默认0，如果total = 5，则total重置为0，index+1，
+  
+      private int total = 0;// 被调用的次数
+      private int currentIndex = 0; // 当前是谁在提供服务
+  
+      // @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE")
+      public Server choose(ILoadBalancer lb, Object key) {
+          if (lb == null) {
+              return null;
+          }
+          Server server = null;
+  
+          while (server == null) {
+              if (Thread.interrupted()) {
+                  return null;
+              }
+              List<Server> upList = lb.getReachableServers(); // 获取还活着的服务
+              List<Server> allList = lb.getAllServers(); // 获取全部的服务
+  
+              int serverCount = allList.size();
+              if (serverCount == 0) {
+                  return null;
+              }
+  
+  //            int index = chooseRandomInt(serverCount); // 生成区间随机数
+  //            server = upList.get(index); // 从活着的服务中随机获取一个
+  
+              // ==============================自定义算法================================
+  
+              if(total < 5){
+                  server = upList.get(currentIndex);
+                  total++;
+              }else {
+                  total = 0;
+                  currentIndex++;
+                  if(currentIndex >= upList.size()){
+                      currentIndex = 0;
+                  }
+                  server = upList.get(currentIndex); // 从活着的服务中心，获取指定的服务来进行操作
+                  total++;
+              }
+  
+              if (server == null) {
+                  Thread.yield();
+                  continue;
+              }
+  
+              if (server.isAlive()) {
+                  return (server);
+              }
+              server = null;
+              Thread.yield();
+          }
+  
+          return server;
+          // ========================================================================
+      }
+  
+    protected int chooseRandomInt(int serverCount) {
+          return ThreadLocalRandom.current().nextInt(serverCount);
+      }
+  
+      @Override
+      public Server choose(Object key) {
+          return choose(getLoadBalancer(), key);
+      }
+  
+      @Override
+      public void initWithNiwsConfig(IClientConfig clientConfig) {
+          // TODO Auto-generated method stub
+  
+      }
+  }, firstPicture=https://picsum.photos/id/300/200/300, flag=, view=null, appreciation=true, shareStatement=true, commentable=true, published=true, recommend=true, description=Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。, createTime=null, updateTime=null, type=Type(id=6, name=null, blogs=[]), tags=[], user=null, comments=[], tagIds=7,8), {}, org.apache.catalina.session.StandardSessionFacade@766c94a7])
+2021-06-27 20:19:04.259  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : redirect:/admin/blogs
+2021-06-27 20:19:04.263  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {message=操作成功, blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:19:04.299  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:19:08.533  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:19:08.564  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:19:22.447  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/23/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[23, {}])
+2021-06-27 20:19:22.465  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:19:28.887  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.addOrUpdateBlog, args=[Blog(id=23, title=Ribbon：负载均衡(基于客户端), content=## 6. Ribbon：负载均衡(基于客户端)
+
+### 6.1 负载均衡以及Ribbon
+
+**Ribbon是什么？**
+
+- Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。
+- 简单的说，Ribbon 是 Netflix 发布的开源项目，主要功能是提供客户端的软件负载均衡算法，将 Netflix 的中间层服务连接在一起。Ribbon 的客户端组件提供一系列完整的配置项，如：连接超时、重试等。简单的说，就是在配置文件中列出 LoadBalancer (简称LB：负载均衡) 后面所有的及其，Ribbon 会自动的帮助你基于某种规则 (如简单轮询，随机连接等等) 去连接这些机器。我们也容易使用 Ribbon 实现自定义的负载均衡算法！
+- 面试造飞机，工作拧螺丝
+
+**Ribbon能干嘛？**
+
+- LB，即负载均衡 (LoadBalancer) ，在微服务或分布式集群中经常用的一种应用。
+- 负载均衡简单的说就是**将用户的请求平摊的分配到多个服务上，从而达到系统的HA (高用)。**
+- 常见的负载均衡软件有 Nginx、Lvs 等等。
+- Dubbo、SpringCloud 中均给我们提供了负载均衡，**SpringCloud 的负载均衡算法可以自定义**。
+- 负载均衡简单分类：
+  - 集中式LB
+    - 即在服务的提供方和消费方之间使用独立的LB设施，如Nginx，由该设施负责把访问请求通过某种策略转发至服务的提供方！
+  - 进程式LB
+    - 将LB逻辑集成到消费方，消费方从服务注册中心获知有哪些地址可用，然后自己再从这些地址中选出一个合适的服务器。
+    - <font color=red>Ribbon 就属于进程内LB</font>，它只是一个类库，集成于消费方进程，消费方通过它来获取到服务提供方的地址！
+
+### 6.2 集成Ribbon
+
+- **springcloud-consumer-dept-80**向pom.xml中添加Ribbon和Eureka依赖，这里Ribbon我使用netflix-ribbon
+
+  ```xml
+          <!--Ribbon-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+              <version>2.2.6.RELEASE</version>
+          </dependency>
+          <!--eureka-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-eureka</artifactId>
+              <version>1.4.7.RELEASE</version>
+          </dependency>
+  ```
+  
+- 在application.yml文件中配置Eureka
+
+  ```yaml
+  server:
+    port: 80
+  
+  # Eureka配置
+  eureka:
+    client:
+      register-with-eureka: false # 不想Eureka 中注册自己
+      service-url:
+        # 从哪个地方拿
+        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  ```
+
+- 主启动类加上@EnableEurekaClient注解，开启Eureka
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  ```
+
+- 自定义Spring配置类：ConfigBean.java 配置负载均衡实现RestTemplate，只需一个注解搞定Ribbon实现负载均衡
+
+  ```java
+  @Configuration
+  public class ConfigBean {// @Configuration -- spring applicationContext.xml
+  
+      // 配置负载均衡 实现RestTemplate
+      @Bean
+      @LoadBalanced // Ribbon实现负载均衡
+      public RestTemplate getRestTemplate(){
+          return new RestTemplate();
+      }
+  
+  }
+  ```
+
+  
+
+- 在DeptConsumerController中之前是将获取服务的地址写死了，我们应该用一个变量来访问服务提供者，通过服务名来访问
+
+  ```java
+      @Autowired
+      private RestTemplate restTemplate; // 提供多种便捷访问远程 http 服务的方法，简单的 Restful 服务模板
+  
+      // Ribbon ,我们这里的地址，应该是一个变量，通过服务名来访问
+  //    private static final String REST_URL_PREFIX = "http://localhost:8001";
+      private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
+      //http://localhost:8001/dept/list
+  ```
+
+  `我们通过集群仍然能够访问到服务`
+
+![image-20210506221557204](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221557204.png)
+
+
+
+​	![image-20210506221707950](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221707950.png)
+
+### 6.3 使用Ribbon实现负载均衡
+
+**1.实现负载均衡**
+
+- 流程图：
+
+  ![image-20210506221811781](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221811781.png)
+
+- 创建db02和db03数据库(一样的)
+
+  ```mysql
+  CREATE DATABASE /*!32312 IF NOT EXISTS*/`db02` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+  
+  USE `db02`;
+  
+  /*Table structure for table `dept` */
+  
+  DROP TABLE IF EXISTS `dept`;
+  
+  CREATE TABLE `dept` (
+    `deptno` BIGINT NOT NULL AUTO_INCREMENT,
+    `dname` VARCHAR(60) DEFAULT NULL,
+    `db_source` VARCHAR(60) DEFAULT NULL,
+    PRIMARY KEY (`deptno`)
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='部门表';
+  
+  /*Data for the table `dept` */
+  
+  INSERT  INTO `dept`(`deptno`,`dname`,`db_source`) VALUES (1,'开发部','db01'),(2,'人事部','db01'),(3,'财务部','db01'),(4,'市场部','db01'),(5,'运维部','db01');
+  
+  INSERT INTO db01.dept (dname, db_source) VALUES('开发部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('人事部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('财务部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('市场部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('运维部',DATABASE());
+  SELECT * FROM dept;
+  ```
+
+- 新建两个服务提供者Moudle：springcloud-provider-dept-8002、springcloud-provider-dept-8003
+
+- 参照springcloud-provider-dept-8001 依次为另外两个Moudle添加pom.xml依赖 、resourece下的mybatis和application.yml配置，Java代码
+
+  ==三个服务（spring.application.name）的名称必须一致，本质就是三个服务连接的数据库分别是db01,db02,db03==
+
+- 启动所有服务测试(根据自身电脑配置决定启动服务的个数)，访问http://eureka7001.com:7001/查看结果
+
+  ![image-20210506222114631](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222114631.png)
+
+- 测试访问http://localhost/consumer/dept/list 这时候随机访问的是服务提供者，可能是8001，也可能是8002，8003、
+
+  此时是8002
+
+  ![image-20210506222237427](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222237427.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8003
+
+  ![image-20210506222315286](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222315286.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8001
+
+  ![image-20210506222344137](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222344137.png)
+
+以上这种**每次访问http://localhost/consumer/dept/list随机访问集群中某个服务提供者，这种情况叫做轮询**，轮询算法在SpringCloud中可以自定义。
+
+**2.如何切换或者自定义规则呢？**
+
+- 在springcloud-provider-dept-80模块下的ConfigBean中进行配置，切换使用不同的规则
+
+  ```java
+  @Configuration
+  public class ConfigBean {//@Configuration -- spring  applicationContext.xml
+  
+      /**
+       * IRule:
+       * RoundRobinRule 轮询
+       * RandomRule 随机
+       * AvailabilityFilteringRule ： 会先过滤掉，跳闸，访问故障的服务~，对剩下的进行轮询~
+       * RetryRule ： 会先按照轮询获取服务~，如果服务获取失败，则会在指定的时间内进行，重试
+       */
+      @LoadBalanced //配置负载均衡实现RestTemplate
+      @Bean
+      public RestTemplate getRestTemplate() {
+          return new RestTemplate();
+      }
+  
+      @Bean
+      public IRule myRule(){
+          return new RandomRule();//使用随机规则
+      }
+  }
+  
+  ```
+
+- 也可以自定义规则，在myRule包下自定义一个配置类MyRule.java，注意：**<font color=red>该包不要和主启动类同级，要跟主启动类所在包同级</font>**：
+  ![image-20210507210206544](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210507210206544.png)
+
+- MyRule.java
+
+  ```java
+  @Configuration
+  public class MyRule {
+  
+      @Bean
+      public IRule myRule() {
+          return new MyRandomRule();//默认是轮循，现在我们自定义
+      }
+  }
+  ```
+
+- 主启动类开启负载均衡并指定自定义的MyRule配置类
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  // 在微服务启动的时候就能去加载我们自定义Ribbon类
+  @RibbonClient(name = "SPRINGCLOUD-PROVIDER-DEPT",configuration = LloamRule.class)// 开启负载均衡，并指定自定义的规则
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  }
+  ```
+
+- 自定义的规则(这里我们参考Ribbon中默认的规则代码自己稍微改动)：MyRandomRule.java
+
+  ```java
+  /*
+   *
+   * Copyright 2013 Netflix, Inc.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   *
+   */
+  package com.mao.myRule;
+  
+  import com.netflix.client.config.IClientConfig;
+  import com.netflix.loadbalancer.AbstractLoadBalancerRule;
+  import com.netflix.loadbalancer.ILoadBalancer;
+  import com.netflix.loadbalancer.Server;
+  
+  import java.util.List;
+  import java.util.concurrent.ThreadLocalRandom;
+  
+  public class LloamRandomRule extends AbstractLoadBalancerRule {
+  
+      /*自定义算法*/
+      // 每个服务，访问5次，访问完5次，换下一个服务（假设服务有3个）
+      // 每个服务的访问次数，total = 0，默认为0，如果=5，则指向下一个服务节点
+      // 当前提供的服务下标，currentIndex = 0，默认0，如果total = 5，则total重置为0，index+1，
+  
+      private int total = 0;// 被调用的次数
+      private int currentIndex = 0; // 当前是谁在提供服务
+  
+      // @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE")
+      public Server choose(ILoadBalancer lb, Object key) {
+          if (lb == null) {
+              return null;
+          }
+          Server server = null;
+  
+          while (server == null) {
+              if (Thread.interrupted()) {
+                  return null;
+              }
+              List<Server> upList = lb.getReachableServers(); // 获取还活着的服务
+              List<Server> allList = lb.getAllServers(); // 获取全部的服务
+  
+              int serverCount = allList.size();
+              if (serverCount == 0) {
+                  return null;
+              }
+  
+  //            int index = chooseRandomInt(serverCount); // 生成区间随机数
+  //            server = upList.get(index); // 从活着的服务中随机获取一个
+  
+              // ==============================自定义算法================================
+  
+              if(total < 5){
+                  server = upList.get(currentIndex);
+                  total++;
+              }else {
+                  total = 0;
+                  currentIndex++;
+                  if(currentIndex >= upList.size()){
+                      currentIndex = 0;
+                  }
+                  server = upList.get(currentIndex); // 从活着的服务中心，获取指定的服务来进行操作
+                  total++;
+              }
+  
+              if (server == null) {
+                  Thread.yield();
+                  continue;
+              }
+  
+              if (server.isAlive()) {
+                  return (server);
+              }
+              server = null;
+              Thread.yield();
+          }
+  
+          return server;
+          // ========================================================================
+      }
+  
+    protected int chooseRandomInt(int serverCount) {
+          return ThreadLocalRandom.current().nextInt(serverCount);
+      }
+  
+      @Override
+      public Server choose(Object key) {
+          return choose(getLoadBalancer(), key);
+      }
+  
+      @Override
+      public void initWithNiwsConfig(IClientConfig clientConfig) {
+          // TODO Auto-generated method stub
+  
+      }
+  }, firstPicture=https://picsum.photos/id/50/200/300, flag=, view=null, appreciation=true, shareStatement=true, commentable=true, published=true, recommend=true, description=Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。, createTime=null, updateTime=null, type=Type(id=6, name=null, blogs=[]), tags=[], user=null, comments=[], tagIds=7,8), {}, org.apache.catalina.session.StandardSessionFacade@766c94a7])
+2021-06-27 20:19:29.118  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : redirect:/admin/blogs
+2021-06-27 20:19:29.122  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {message=操作成功, blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:19:29.223  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:19:32.148  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:19:32.167  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:19:33.961  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/23, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:19:33.973  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:22:08.021  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/23, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:22:08.030  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:24:11.901  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:24:11.949  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:24:13.433  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/22, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:24:13.444  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:24:18.270  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/23, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:24:18.283  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:26:35.055  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:26:35.086  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:27:00.627  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:27:00.646  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:27:17.869  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:27:17.889  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:27:27.944  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog/23, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:27:27.956  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:27:33.836  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:27:33.869  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:30:36.994  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/, ip=10.102.75.96, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:30:37.014  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:31:30.860  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/, ip=10.102.68.158, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:31:31.064  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:31:39.826  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/, ip=10.102.68.158, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:31:39.843  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:32:00.049  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/admin, ip=10.102.68.158, classMethod=com.mao.web.admin.LoginController.loginPage, args=[])
+2021-06-27 20:32:00.050  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : admin/login
+2021-06-27 20:32:15.678  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/admin/login, ip=10.102.68.158, classMethod=com.mao.web.admin.LoginController.login, args=[limao, 111111, org.apache.catalina.session.StandardSessionFacade@7a12d72b, {}])
+2021-06-27 20:32:15.684  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : admin/index
+2021-06-27 20:32:22.713  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/admin/blogs;jsessionid=9D5C3A46264DE2EF93C625C7CAB859B6, ip=10.102.68.158, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:32:22.776  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:32:29.715  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/admin/blogs, ip=10.102.68.158, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:32:29.757  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:32:31.267  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/admin/blogs/input, ip=10.102.68.158, classMethod=com.mao.web.admin.BlogController.input, args=[{}])
+2021-06-27 20:32:31.293  INFO 1288 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:32:46.290  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/23, ip=10.102.68.158, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:32:46.303  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:37:27.076  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/, ip=10.102.75.96, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 20:37:27.120  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : index
+2021-06-27 20:37:29.169  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/23, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:37:29.180  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:37:34.986  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:37:34.994  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:37:45.173  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/22/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[22, {}])
+2021-06-27 20:37:45.191  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:37:55.757  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.addOrUpdateBlog, args=[Blog(id=22, title=springboot开发小而美的个人博客, content=# springboot开发小而美的个人博客
+
+视频链接地址：https://www.bilibili.com/video/BV13t411T72J?from=search&seid=8716921769528151003
+
+前端代码借鉴于B站上的一位朋友：https://space.bilibili.com/543907395?spm_id_from=333.788.b_636f6d6d656e74.29
+
+他的博客地址为：https://onestar.newstar.net.cn/
+
+
+
+# 1、需求与功能
+
+用户故事
+
+## 1.1用户故事
+
+用户故事模板：
+
+- 作为一个（某个角色）使用者，我可以做某个功能事情，如此可以有（某个商业价值）的好处
+
+角色、功能、商业价值
+
+
+
+个人博客系统的用户故事：
+
+角色：普通访客，管理员（我）
+
+- 访客：可以分页查看所有博客
+- 访客，可以快速查看博客数最多的6个分类
+- 访客：可以查看所有分类
+- 访客：可以查看某个分类下的博客列表
+- 访客：可以快速查看标记博客最多的10个标签
+- 访客：可以查看所有的标签
+- 访客：可以查看某个标签下的博客列表
+- 访客：可以根据年度时间线查看博客列表
+- 访客：可以快速查看最新的推荐博客
+- 访客：可以查看单个博客内容
+- 访客：可以对博客进行评论
+- 访客：可以赞赏博客内容
+- 访客：可以微信扫码阅读博客内容
+- 访客：可以在首页扫描公众号二维码关注我
+
+---
+
+- 我：可以用户名和密码登录后台管理
+- 我：可以管理博客
+  - 我：可以发布新的博客
+  - 我：可以对博客进行分类
+  - 我：可以对博客打标签
+  - 我：可以修改博客
+  - 我：可以删除博客
+  - 我：可以根据标题，分类，标签查询博客
+- 我：可以管理博客分类
+  - 我：可以新增一个分类
+  - 我：可以修改一个分类
+  - 可以删除一个分类
+  - 我：可以根据分类名称查询分类
+- 我：可以管理标签
+  - 我：可以新增一个标签
+  - 我：可修改一个标签
+  - 我：可以删除一个标签
+  - 我：可以根据名称查询标签
+
+## 1.2 功能规划
+
+![image-20210619212011900](https://gitee.com/lloamhh/spring-img/raw/master/img/blog/image-20210619212011900.png), firstPicture=https://picsum.photos/id/800/450/300, flag=原创, view=null, appreciation=true, shareStatement=true, commentable=true, published=true, recommend=true, description=springboot开发小而美的个人博客, createTime=null, updateTime=null, type=Type(id=6, name=null, blogs=[]), tags=[], user=null, comments=[], tagIds=8), {}, org.apache.catalina.session.StandardSessionFacade@766c94a7])
+2021-06-27 20:37:56.210  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : redirect:/admin/blogs
+2021-06-27 20:37:56.218  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {message=操作成功, blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:37:56.576  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:38:00.523  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:38:00.532  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:38:03.886  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/23, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:38:03.897  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:38:05.667  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/23, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:38:05.675  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:38:09.397  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/23/input, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.editInput, args=[23, {}])
+2021-06-27 20:38:09.412  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : admin/blogs-input
+2021-06-27 20:38:15.512  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.addOrUpdateBlog, args=[Blog(id=23, title=Ribbon：负载均衡(基于客户端), content=## 6. Ribbon：负载均衡(基于客户端)
+
+### 6.1 负载均衡以及Ribbon
+
+**Ribbon是什么？**
+
+- Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。
+- 简单的说，Ribbon 是 Netflix 发布的开源项目，主要功能是提供客户端的软件负载均衡算法，将 Netflix 的中间层服务连接在一起。Ribbon 的客户端组件提供一系列完整的配置项，如：连接超时、重试等。简单的说，就是在配置文件中列出 LoadBalancer (简称LB：负载均衡) 后面所有的及其，Ribbon 会自动的帮助你基于某种规则 (如简单轮询，随机连接等等) 去连接这些机器。我们也容易使用 Ribbon 实现自定义的负载均衡算法！
+- 面试造飞机，工作拧螺丝
+
+**Ribbon能干嘛？**
+
+- LB，即负载均衡 (LoadBalancer) ，在微服务或分布式集群中经常用的一种应用。
+- 负载均衡简单的说就是**将用户的请求平摊的分配到多个服务上，从而达到系统的HA (高用)。**
+- 常见的负载均衡软件有 Nginx、Lvs 等等。
+- Dubbo、SpringCloud 中均给我们提供了负载均衡，**SpringCloud 的负载均衡算法可以自定义**。
+- 负载均衡简单分类：
+  - 集中式LB
+    - 即在服务的提供方和消费方之间使用独立的LB设施，如Nginx，由该设施负责把访问请求通过某种策略转发至服务的提供方！
+  - 进程式LB
+    - 将LB逻辑集成到消费方，消费方从服务注册中心获知有哪些地址可用，然后自己再从这些地址中选出一个合适的服务器。
+    - <font color=red>Ribbon 就属于进程内LB</font>，它只是一个类库，集成于消费方进程，消费方通过它来获取到服务提供方的地址！
+
+### 6.2 集成Ribbon
+
+- **springcloud-consumer-dept-80**向pom.xml中添加Ribbon和Eureka依赖，这里Ribbon我使用netflix-ribbon
+
+  ```xml
+          <!--Ribbon-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+              <version>2.2.6.RELEASE</version>
+          </dependency>
+          <!--eureka-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-eureka</artifactId>
+              <version>1.4.7.RELEASE</version>
+          </dependency>
+  ```
+  
+- 在application.yml文件中配置Eureka
+
+  ```yaml
+  server:
+    port: 80
+  
+  # Eureka配置
+  eureka:
+    client:
+      register-with-eureka: false # 不想Eureka 中注册自己
+      service-url:
+        # 从哪个地方拿
+        defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  ```
+
+- 主启动类加上@EnableEurekaClient注解，开启Eureka
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  ```
+
+- 自定义Spring配置类：ConfigBean.java 配置负载均衡实现RestTemplate，只需一个注解搞定Ribbon实现负载均衡
+
+  ```java
+  @Configuration
+  public class ConfigBean {// @Configuration -- spring applicationContext.xml
+  
+      // 配置负载均衡 实现RestTemplate
+      @Bean
+      @LoadBalanced // Ribbon实现负载均衡
+      public RestTemplate getRestTemplate(){
+          return new RestTemplate();
+      }
+  
+  }
+  ```
+
+  
+
+- 在DeptConsumerController中之前是将获取服务的地址写死了，我们应该用一个变量来访问服务提供者，通过服务名来访问
+
+  ```java
+      @Autowired
+      private RestTemplate restTemplate; // 提供多种便捷访问远程 http 服务的方法，简单的 Restful 服务模板
+  
+      // Ribbon ,我们这里的地址，应该是一个变量，通过服务名来访问
+  //    private static final String REST_URL_PREFIX = "http://localhost:8001";
+      private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
+      //http://localhost:8001/dept/list
+  ```
+
+  `我们通过集群仍然能够访问到服务`
+
+![image-20210506221557204](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221557204.png)
+
+
+
+​	![image-20210506221707950](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221707950.png)
+
+### 6.3 使用Ribbon实现负载均衡
+
+**1.实现负载均衡**
+
+- 流程图：
+
+  ![image-20210506221811781](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506221811781.png)
+
+- 创建db02和db03数据库(一样的)
+
+  ```mysql
+  CREATE DATABASE /*!32312 IF NOT EXISTS*/`db02` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+  
+  USE `db02`;
+  
+  /*Table structure for table `dept` */
+  
+  DROP TABLE IF EXISTS `dept`;
+  
+  CREATE TABLE `dept` (
+    `deptno` BIGINT NOT NULL AUTO_INCREMENT,
+    `dname` VARCHAR(60) DEFAULT NULL,
+    `db_source` VARCHAR(60) DEFAULT NULL,
+    PRIMARY KEY (`deptno`)
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='部门表';
+  
+  /*Data for the table `dept` */
+  
+  INSERT  INTO `dept`(`deptno`,`dname`,`db_source`) VALUES (1,'开发部','db01'),(2,'人事部','db01'),(3,'财务部','db01'),(4,'市场部','db01'),(5,'运维部','db01');
+  
+  INSERT INTO db01.dept (dname, db_source) VALUES('开发部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('人事部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('财务部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('市场部',DATABASE());
+  INSERT INTO db01.dept (dname, db_source) VALUES('运维部',DATABASE());
+  SELECT * FROM dept;
+  ```
+
+- 新建两个服务提供者Moudle：springcloud-provider-dept-8002、springcloud-provider-dept-8003
+
+- 参照springcloud-provider-dept-8001 依次为另外两个Moudle添加pom.xml依赖 、resourece下的mybatis和application.yml配置，Java代码
+
+  ==三个服务（spring.application.name）的名称必须一致，本质就是三个服务连接的数据库分别是db01,db02,db03==
+
+- 启动所有服务测试(根据自身电脑配置决定启动服务的个数)，访问http://eureka7001.com:7001/查看结果
+
+  ![image-20210506222114631](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222114631.png)
+
+- 测试访问http://localhost/consumer/dept/list 这时候随机访问的是服务提供者，可能是8001，也可能是8002，8003、
+
+  此时是8002
+
+  ![image-20210506222237427](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222237427.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8003
+
+  ![image-20210506222315286](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222315286.png)
+
+- 再次访问http://localhost/consumer/dept/list这时候随机的是服务提供者8001
+
+  ![image-20210506222344137](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210506222344137.png)
+
+以上这种**每次访问http://localhost/consumer/dept/list随机访问集群中某个服务提供者，这种情况叫做轮询**，轮询算法在SpringCloud中可以自定义。
+
+**2.如何切换或者自定义规则呢？**
+
+- 在springcloud-provider-dept-80模块下的ConfigBean中进行配置，切换使用不同的规则
+
+  ```java
+  @Configuration
+  public class ConfigBean {//@Configuration -- spring  applicationContext.xml
+  
+      /**
+       * IRule:
+       * RoundRobinRule 轮询
+       * RandomRule 随机
+       * AvailabilityFilteringRule ： 会先过滤掉，跳闸，访问故障的服务~，对剩下的进行轮询~
+       * RetryRule ： 会先按照轮询获取服务~，如果服务获取失败，则会在指定的时间内进行，重试
+       */
+      @LoadBalanced //配置负载均衡实现RestTemplate
+      @Bean
+      public RestTemplate getRestTemplate() {
+          return new RestTemplate();
+      }
+  
+      @Bean
+      public IRule myRule(){
+          return new RandomRule();//使用随机规则
+      }
+  }
+  
+  ```
+
+- 也可以自定义规则，在myRule包下自定义一个配置类MyRule.java，注意：**<font color=red>该包不要和主启动类同级，要跟主启动类所在包同级</font>**：
+  ![image-20210507210206544](https://gitee.com/lloamhh/spring-img/raw/master/img/springcloud/image-20210507210206544.png)
+
+- MyRule.java
+
+  ```java
+  @Configuration
+  public class MyRule {
+  
+      @Bean
+      public IRule myRule() {
+          return new MyRandomRule();//默认是轮循，现在我们自定义
+      }
+  }
+  ```
+
+- 主启动类开启负载均衡并指定自定义的MyRule配置类
+
+  ```java
+  // Ribbon 和Eureka 整合以后，客户端可以直接调用，不用IP地址和端口号
+  @SpringBootApplication
+  @EnableEurekaClient
+  // 在微服务启动的时候就能去加载我们自定义Ribbon类
+  @RibbonClient(name = "SPRINGCLOUD-PROVIDER-DEPT",configuration = LloamRule.class)// 开启负载均衡，并指定自定义的规则
+  public class DeptConsumer_80 {
+      public static void main(String[] args) {
+          SpringApplication.run(DeptConsumer_80.class,args);
+      }
+  }
+  ```
+
+- 自定义的规则(这里我们参考Ribbon中默认的规则代码自己稍微改动)：MyRandomRule.java
+
+  ```java
+  /*
+   *
+   * Copyright 2013 Netflix, Inc.
+   *
+   * Licensed under the Apache License, Version 2.0 (the "License");
+   * you may not use this file except in compliance with the License.
+   * You may obtain a copy of the License at
+   *
+   * http://www.apache.org/licenses/LICENSE-2.0
+   *
+   * Unless required by applicable law or agreed to in writing, software
+   * distributed under the License is distributed on an "AS IS" BASIS,
+   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   * See the License for the specific language governing permissions and
+   * limitations under the License.
+   *
+   */
+  package com.mao.myRule;
+  
+  import com.netflix.client.config.IClientConfig;
+  import com.netflix.loadbalancer.AbstractLoadBalancerRule;
+  import com.netflix.loadbalancer.ILoadBalancer;
+  import com.netflix.loadbalancer.Server;
+  
+  import java.util.List;
+  import java.util.concurrent.ThreadLocalRandom;
+  
+  public class LloamRandomRule extends AbstractLoadBalancerRule {
+  
+      /*自定义算法*/
+      // 每个服务，访问5次，访问完5次，换下一个服务（假设服务有3个）
+      // 每个服务的访问次数，total = 0，默认为0，如果=5，则指向下一个服务节点
+      // 当前提供的服务下标，currentIndex = 0，默认0，如果total = 5，则total重置为0，index+1，
+  
+      private int total = 0;// 被调用的次数
+      private int currentIndex = 0; // 当前是谁在提供服务
+  
+      // @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE")
+      public Server choose(ILoadBalancer lb, Object key) {
+          if (lb == null) {
+              return null;
+          }
+          Server server = null;
+  
+          while (server == null) {
+              if (Thread.interrupted()) {
+                  return null;
+              }
+              List<Server> upList = lb.getReachableServers(); // 获取还活着的服务
+              List<Server> allList = lb.getAllServers(); // 获取全部的服务
+  
+              int serverCount = allList.size();
+              if (serverCount == 0) {
+                  return null;
+              }
+  
+  //            int index = chooseRandomInt(serverCount); // 生成区间随机数
+  //            server = upList.get(index); // 从活着的服务中随机获取一个
+  
+              // ==============================自定义算法================================
+  
+              if(total < 5){
+                  server = upList.get(currentIndex);
+                  total++;
+              }else {
+                  total = 0;
+                  currentIndex++;
+                  if(currentIndex >= upList.size()){
+                      currentIndex = 0;
+                  }
+                  server = upList.get(currentIndex); // 从活着的服务中心，获取指定的服务来进行操作
+                  total++;
+              }
+  
+              if (server == null) {
+                  Thread.yield();
+                  continue;
+              }
+  
+              if (server.isAlive()) {
+                  return (server);
+              }
+              server = null;
+              Thread.yield();
+          }
+  
+          return server;
+          // ========================================================================
+      }
+  
+    protected int chooseRandomInt(int serverCount) {
+          return ThreadLocalRandom.current().nextInt(serverCount);
+      }
+  
+      @Override
+      public Server choose(Object key) {
+          return choose(getLoadBalancer(), key);
+      }
+  
+      @Override
+      public void initWithNiwsConfig(IClientConfig clientConfig) {
+          // TODO Auto-generated method stub
+  
+      }
+  }, firstPicture=https://picsum.photos/id/50/200/300, flag=原创, view=null, appreciation=true, shareStatement=true, commentable=true, published=true, recommend=true, description=Spring Cloud Ribbon 是基于Netflix Ribbon 实现的一套**客户端负载均衡的工具**。, createTime=null, updateTime=null, type=Type(id=6, name=null, blogs=[]), tags=[], user=null, comments=[], tagIds=7,8), {}, org.apache.catalina.session.StandardSessionFacade@766c94a7])
+2021-06-27 20:38:15.996  INFO 1288 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : redirect:/admin/blogs
+2021-06-27 20:38:16.001  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.admin.BlogController.blogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {message=操作成功, blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-06-27 20:38:16.128  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : admin/blogs
+2021-06-27 20:38:19.965  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/23, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[23, {}])
+2021-06-27 20:38:19.975  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:42:05.813  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:42:05.823  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:43:02.435  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:43:02.443  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:43:05.982  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:43:05.990  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:43:52.340  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:43:52.350  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:44:39.457  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:44:39.466  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:44:50.445  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:44:50.453  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:45:21.689  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:45:21.696  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:45:55.494  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:45:55.504  INFO 1288 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:46:08.323  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.68.158, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:46:08.332  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:47:37.463  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:47:37.474  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:47:58.269  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.68.158, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:47:58.282  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:48:47.237  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:48:47.247  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:56:14.331  INFO 1288 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 20:56:14.336  INFO 1288 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-27 20:56:14.345  INFO 1288 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-27 20:56:14.634  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : Starting BlogApplication using Java 1.8.0_151 on X6X8-20190310CV with PID 1288 (C:\Users\Administrator\Desktop\myBlog\blog\target\classes started by Administrator in C:\Users\Administrator\Desktop\myBlog\blog)
+2021-06-27 20:56:14.634 DEBUG 1288 --- [restartedMain] com.mao.BlogApplication                  : Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-06-27 20:56:14.634  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : The following profiles are active: dev
+2021-06-27 20:56:15.060  INFO 1288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-27 20:56:15.217  INFO 1288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 4 JPA repository interfaces.
+2021-06-27 20:56:15.552  INFO 1288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-27 20:56:15.553  INFO 1288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-27 20:56:15.553  INFO 1288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-06-27 20:56:15.554  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-06-27 20:56:15.554  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2021-06-27 20:56:15.554  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2021-06-27 20:56:15.554  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-27 20:56:15.555  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2021-06-27 20:56:15.591  INFO 1288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-27 20:56:15.591  INFO 1288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 954 ms
+2021-06-27 20:56:15.682  INFO 1288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-27 20:56:15.688  INFO 1288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-06-27 20:56:15.795  INFO 1288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-06-27 20:56:15.796  INFO 1288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-27 20:56:16.846  INFO 1288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-27 20:56:16.847  INFO 1288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 20:56:17.356  INFO 1288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-27 20:56:17.518  INFO 1288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-27 20:56:17.530  INFO 1288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-27 20:56:17.535  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : Started BlogApplication in 3.02 seconds (JVM running for 3309.026)
+2021-06-27 20:56:17.536  INFO 1288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-27 20:56:19.873  INFO 1288 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 20:56:19.874  INFO 1288 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-06-27 20:56:19.880  INFO 1288 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-06-27 20:56:20.083  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : Starting BlogApplication using Java 1.8.0_151 on X6X8-20190310CV with PID 1288 (C:\Users\Administrator\Desktop\myBlog\blog\target\classes started by Administrator in C:\Users\Administrator\Desktop\myBlog\blog)
+2021-06-27 20:56:20.084 DEBUG 1288 --- [restartedMain] com.mao.BlogApplication                  : Running with Spring Boot v2.5.2, Spring v5.3.8
+2021-06-27 20:56:20.084  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : The following profiles are active: dev
+2021-06-27 20:56:20.438  INFO 1288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-27 20:56:20.490  INFO 1288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2021-06-27 20:56:20.688  INFO 1288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-27 20:56:20.688  INFO 1288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-27 20:56:20.689  INFO 1288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-06-27 20:56:20.689  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.26] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2021-06-27 20:56:20.689  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.26] using APR version [1.7.0].
+2021-06-27 20:56:20.689  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2021-06-27 20:56:20.689  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-27 20:56:20.689  INFO 1288 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1i  8 Dec 2020]
+2021-06-27 20:56:20.716  INFO 1288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-27 20:56:20.717  INFO 1288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 630 ms
+2021-06-27 20:56:20.793  INFO 1288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-27 20:56:20.799  INFO 1288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-06-27 20:56:20.850  INFO 1288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-06-27 20:56:20.850  INFO 1288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-27 20:56:21.666  INFO 1288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-27 20:56:21.667  INFO 1288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 20:56:22.209  INFO 1288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-27 20:56:22.365  INFO 1288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-27 20:56:22.376  INFO 1288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-27 20:56:22.379  INFO 1288 --- [restartedMain] com.mao.BlogApplication                  : Started BlogApplication in 2.349 seconds (JVM running for 3313.872)
+2021-06-27 20:56:22.380  INFO 1288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-27 20:56:25.519  INFO 1288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-27 20:56:25.520  INFO 1288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-27 20:56:25.521  INFO 1288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-27 20:56:25.524  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:56:25.641  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:58:51.012  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:58:51.022  INFO 1288 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:59:01.187  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:59:01.196  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:59:11.578  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:59:11.585  INFO 1288 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:59:26.910  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:59:26.919  INFO 1288 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:59:35.034  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:59:35.043  INFO 1288 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 20:59:44.114  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 20:59:44.123  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 21:01:02.421  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 21:01:02.429  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 21:03:28.493  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.75.96, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 21:03:28.502  INFO 1288 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 21:03:45.174  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/blog/22, ip=10.102.68.158, classMethod=com.mao.web.IndexController.blog, args=[22, {}])
+2021-06-27 21:03:45.183  INFO 1288 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : blog
+2021-06-27 21:04:37.848  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://10.102.75.96:8080/, ip=10.102.75.96, classMethod=com.mao.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-06-27 21:04:37.889  WARN 1288 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-27 21:04:37.895  WARN 1288 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-27 21:04:37.900  INFO 1288 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : index

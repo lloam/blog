@@ -5,6 +5,7 @@ import com.mao.dao.BlogRepository;
 import com.mao.dto.BlogQuery;
 import com.mao.po.Blog;
 import com.mao.po.Type;
+import com.mao.util.MarkdownUtils;
 import com.mao.util.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,24 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog getBlog(Integer id) {
         return blogRepository.getById(id);
+    }
+
+    /**
+     * 获取blog对象，并且将 content 从markdown转换为 html
+     * @param id
+     * @return
+     */
+    @Override
+    public Blog getAndConvert(Integer id) {
+        Blog blog = blogRepository.getById(id);
+        if(blog == null){
+            throw new NotFoundException("该博客不存在");
+        }
+        Blog blogReturn = new Blog();
+        BeanUtils.copyProperties(blog,blogReturn);
+        String content = blogReturn.getContent();
+        blogReturn.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return blogReturn;
     }
 
     /**

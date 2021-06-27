@@ -16,6 +16,8 @@ public interface BlogService {
 
     Blog getBlog(Integer id);
 
+    Blog getAndConvert(Integer id);
+
     Page<Blog> listBlog(Pageable pageable, BlogQuery blogQuery);
 
     Page<Blog> listBlog(Pageable pageable);
