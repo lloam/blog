@@ -21,8 +21,8 @@ import java.util.List;
 @Table(name = "t_tag")
 public class Tag {
     @Id
-    @GeneratedValue
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     @NotBlank(message = "标签名称不能为空")
     private String name;
 

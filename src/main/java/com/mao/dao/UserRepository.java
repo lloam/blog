@@ -9,7 +9,7 @@ import sun.rmi.runtime.Log;
  * Date: 2021/6/26 9:48
  * Description:
  */
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Integer> {
 
     User findByUsernameAndPassword(String username,String password);
 }

@@ -55,7 +55,7 @@
                 <div class="header">提示：</div>
                 <p th:text="${message}">恭喜，操作成功！</p>
             </div>
-            <table class="ui celled table">
+            <table class="ui teal celled table">
                 <thead>
                     <tr>
                         <th></th>
@@ -80,6 +80,7 @@
                                 <a class="item" th:href="@{/admin/tags(page=${page.number}-1)}" th:unless="${page.first}">上一页</a>
                                 <a class="item" th:href="@{/admin/tags(page=${page.number}+1)}" th:unless="${page.last}">下一页</a>
                             </div>
+                            共<span class="center floated" th:text="${page.totalPages}"></span>页，当前第<span th:text="${page.number}+1"></span>页
                             <a href="#" th:href="@{/admin/tags/input}" class="ui mini right floated teal basic button">新增</a>
                         </th>
                     </tr>

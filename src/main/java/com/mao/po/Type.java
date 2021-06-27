@@ -23,11 +23,12 @@ import java.util.List;
 public class Type {
 
     @Id
-    @GeneratedValue
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     @NotBlank(message = "分类名称不能为空")
     private String name;
 
-    @OneToMany(mappedBy = "type")
+    // 允许懒加载
+    @OneToMany(mappedBy = "type",fetch = FetchType.EAGER)
     private List<Blog> blogs = new ArrayList<>();
 }

@@ -5,12 +5,17 @@ import com.mao.dao.TagRepository;
 import com.mao.dao.TypeRepository;
 import com.mao.po.Tag;
 import com.mao.po.Type;
+import com.mao.util.IdsConvertToList;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * Author: Administrator
@@ -30,7 +35,7 @@ public class TagServiceImpl implements TagService {
     }
     @Transactional
     @Override
-    public Tag getTag(Long id) {
+    public Tag getTag(Integer id) {
         return tagRepository.getById(id);
     }
     @Transactional
@@ -43,9 +48,32 @@ public class TagServiceImpl implements TagService {
     public Page<Tag> listTag(Pageable pageable) {
         return tagRepository.findAll(pageable);
     }
+
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
+    }
+
+    @Override
+    public List<Tag> listTagTop(Integer size) {
+        Sort sort = Sort.by(Sort.Direction.DESC, "blogs.size");
+        Pageable pageable = PageRequest.of(0, size, sort);
+        return tagRepository.findTopSizeBlog(pageable);
+    }
+
+    /**
+     * 通过一组 ids ，找到对应的 tag 集合
+     * @param ids
+     * @return
+     */
+    @Override
+    public List<Tag> listTag(String ids) {
+        return tagRepository.findAllById(IdsConvertToList.convertToList(ids));
+    }
+
     @Transactional
     @Override
-    public Tag updateTag(Long id, Tag tag) {
+    public Tag updateTag(Integer id, Tag tag) {
         Tag t = tagRepository.getById(id);
         if(t == null){
             throw new NotFoundException("不存在该类型");
@@ -55,7 +83,7 @@ public class TagServiceImpl implements TagService {
     }
     @Transactional
     @Override
-    public void deleteTag(Long id) {
+    public void deleteTag(Integer id) {
         tagRepository.deleteById(id);
     }
 }

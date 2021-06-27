@@ -26,7 +26,7 @@ public class LogAspect {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     // aop 切面，也就是我们要在哪些方法中横切日志
-    @Pointcut("execution(* com.mao.web.*.*(..))")
+    @Pointcut("execution(* com.mao.web..*.*(..))")
     public void log(){
 
     }

@@ -22,8 +22,8 @@ import java.util.List;
 public class User {
 
     @Id
-    @GeneratedValue
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String nickname;
     private String username;
     private String password;
@@ -35,6 +35,15 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user",fetch = FetchType.EAGER)
     private List<Blog> blogs = new ArrayList<>();
+
+    public User(String nickname, String username, String password, String email, String avatar, Integer type) {
+        this.nickname = nickname;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.avatar = avatar;
+        this.type = type;
+    }
 }

@@ -22,8 +22,8 @@ import java.util.List;
 public class Comment {
 
     @Id
-    @GeneratedValue
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String nickname;
     private String email;
     private String content;

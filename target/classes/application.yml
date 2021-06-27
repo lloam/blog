@@ -5,3 +5,5 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
+  jpa:
+    open-in-view: true

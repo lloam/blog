@@ -104,6 +104,9 @@
     .m-margin--bottm-small {
         margin-bottom: 0.5em !important;
     }
+    .m-margin--left-small {
+        margin-left: 1em !important;
+    }
     /*------opacity------*/
     
     .m-opacity-mini {

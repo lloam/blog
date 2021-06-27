@@ -6,9 +6,13 @@ import com.mao.po.Type;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * Author: Administrator
@@ -29,7 +33,7 @@ public class TypeServiceImpl implements TypeService {
 
     @Transactional
     @Override
-    public Type getType(Long id) {
+    public Type getType(Integer id) {
         return typeRepository.getById(id);
     }
 
@@ -44,9 +48,21 @@ public class TypeServiceImpl implements TypeService {
         return typeRepository.findAll(pageable);
     }
 
+    @Override
+    public List<Type> listType() {
+        return typeRepository.findAll();
+    }
+
+    @Override
+    public List<Type> listTypeTop(Integer size) {
+        Sort sort = Sort.by(Sort.Direction.DESC, "blogs.size");
+        Pageable pageable = PageRequest.of(0, size,sort);
+        return typeRepository.findTopSizeBlog(pageable);
+    }
+
     @Transactional
     @Override
-    public Type updateType(Long id, Type type) {
+    public Type updateType(Integer id, Type type) {
         Type t = typeRepository.getById(id);
         if(t == null){
             throw new NotFoundException("不存在该类型");
@@ -57,7 +73,7 @@ public class TypeServiceImpl implements TypeService {
 
     @Transactional
     @Override
-    public void deleteType(Long id) {
+    public void deleteType(Integer id) {
         typeRepository.deleteById(id);
     }
 }

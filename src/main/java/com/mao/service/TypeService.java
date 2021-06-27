@@ -4,6 +4,8 @@ import com.mao.po.Type;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * Author: Administrator
  * Date: 2021/6/26 11:08
@@ -13,13 +15,17 @@ public interface TypeService {
 
     Type saveType(Type type);
 
-    Type getType(Long id);
+    Type getType(Integer id);
 
     Type getTypeByName(String name);
 
     Page<Type> listType(Pageable pageable);
 
-    Type updateType(Long id,Type type);
+    List<Type> listType();
 
-    void deleteType(Long id);
+    List<Type> listTypeTop(Integer size);
+
+    Type updateType(Integer id,Type type);
+
+    void deleteType(Integer id);
 }

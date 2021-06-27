@@ -33,7 +33,7 @@ public class TypeController {
      * @return
      */
     @GetMapping("/types")
-    public String types(@PageableDefault(size = 3,sort = {"id"},direction = Sort.Direction.DESC)
+    public String types(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC)
                                     Pageable pageable, Model model){
         model.addAttribute("page",typeService.listType(pageable));
         return "admin/types";
@@ -85,7 +85,7 @@ public class TypeController {
      * @return
      */
     @GetMapping("/types/{id}/input")
-    public String editInput(@PathVariable("id") Long id, Model model){
+    public String editInput(@PathVariable("id") Integer id, Model model){
         model.addAttribute("type",typeService.getType(id));
         return "admin/types-input";
     }
@@ -101,7 +101,7 @@ public class TypeController {
     @PutMapping("types/{id}")
     public String postDeleteType(@Valid Type type,
                               BindingResult result,
-                              @PathVariable("id") Long id,
+                              @PathVariable("id") Integer id,
                               RedirectAttributes attributes){
         Type typeByName = typeService.getTypeByName(type.getName());
         if(typeByName != null){
@@ -127,7 +127,7 @@ public class TypeController {
      * @return
      */
     @GetMapping("types/{id}/delete")
-    public String deleteType(@PathVariable("id") Long id,
+    public String deleteType(@PathVariable("id") Integer id,
                              RedirectAttributes attributes){
         typeService.deleteType(id);
         attributes.addFlashAttribute("message","删除成功");

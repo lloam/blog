@@ -35,7 +35,7 @@ public class TagController {
      * @return
      */
     @GetMapping("/tags")
-    public String types(@PageableDefault(size = 3,sort = {"id"},direction = Sort.Direction.DESC)
+    public String types(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC)
                                     Pageable pageable, Model model){
         model.addAttribute("page",tagService.listTag(pageable));
         return "admin/tags";
@@ -87,7 +87,7 @@ public class TagController {
      * @return
      */
     @GetMapping("/tags/{id}/input")
-    public String editInput(@PathVariable("id") Long id, Model model){
+    public String editInput(@PathVariable("id") Integer id, Model model){
         model.addAttribute("tag",tagService.getTag(id));
         return "admin/tags-input";
     }
@@ -103,7 +103,7 @@ public class TagController {
     @PutMapping("tags/{id}")
     public String postDeleteTag(@Valid Tag tag,
                               BindingResult result,
-                              @PathVariable("id") Long id,
+                              @PathVariable("id") Integer id,
                               RedirectAttributes attributes){
         Tag tagByName = tagService.getTagByName(tag.getName());
         if(tagByName != null){
@@ -129,7 +129,7 @@ public class TagController {
      * @return
      */
     @GetMapping("tags/{id}/delete")
-    public String deleteTag(@PathVariable("id") Long id,
+    public String deleteTag(@PathVariable("id") Integer id,
                              RedirectAttributes attributes){
         tagService.deleteTag(id);
         attributes.addFlashAttribute("message","删除成功");
