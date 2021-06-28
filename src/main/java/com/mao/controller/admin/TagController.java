@@ -1,7 +1,7 @@
-package com.mao.web.admin;
+package com.mao.controller.admin;
 
-import com.mao.po.Type;
-import com.mao.service.TypeService;
+import com.mao.po.Tag;
+import com.mao.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -21,116 +21,116 @@ import javax.validation.Valid;
  */
 @Controller
 @RequestMapping("/admin")
-public class TypeController {
+public class TagController {
 
     @Autowired
-    private TypeService typeService;
+    private TagService tagService;
 
     /**
-     * 分页查询分类
+     * 分页查询标签
      * @param pageable
      * @param model
      * @return
      */
-    @GetMapping("/types")
+    @GetMapping("/tags")
     public String types(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC)
                                     Pageable pageable, Model model){
-        model.addAttribute("page",typeService.listType(pageable));
-        return "admin/types";
+        model.addAttribute("page",tagService.listTag(pageable));
+        return "admin/tags";
     }
 
     /**
      * 来到新增页面
      * @return
      */
-    @GetMapping("/types/input")
+    @GetMapping("/tags/input")
     public String inputPage(Model model){
-        model.addAttribute("type",new Type());
-        return "admin/types-input";
+        model.addAttribute("tag",new Tag());
+        return "admin/tags-input";
     }
 
     /**
-     * 通过 post 方式提交 type数据
-     * @param type
+     * 通过 post 方式提交 tag 数据
+     * @param tag
+     * @param result
+     * @param attributes
      * @return
      */
-    @PostMapping("/types")
-    public String postAddType(@Valid Type type,
+    @PostMapping("/tags")
+    public String postAddType(@Valid Tag tag,
                               BindingResult result,
                               RedirectAttributes attributes){
-//        System.out.println(type);
-//        System.out.println(result.hasErrors());
-        Type typeByName = typeService.getTypeByName(type.getName());
-        if(typeByName != null){
-            result.rejectValue("name","nameError","已经存在该分类");
+        Tag tagByName = tagService.getTagByName(tag.getName());
+        if(tagByName != null){
+            result.rejectValue("name","nameError","已经存在该分标签");
         }
         if(result.hasErrors()){
-            return "admin/types-input";
+            return "admin/tags-input";
         }
-        System.out.println(type);
-        Type t = typeService.saveType(type);
+        System.out.println(tag);
+        Tag t = tagService.saveTag(tag);
         System.out.println(t);
         if(t == null){
             attributes.addFlashAttribute("message","新增失败");
         }else {
             attributes.addFlashAttribute("message","新增成功");
         }
-        return "redirect:/admin/types";
+        return "redirect:/admin/tags";
     }
 
     /**
-     * 调到修改页面
+     * 跳转到修改页面
      * @param id
      * @param model
      * @return
      */
-    @GetMapping("/types/{id}/input")
+    @GetMapping("/tags/{id}/input")
     public String editInput(@PathVariable("id") Integer id, Model model){
-        model.addAttribute("type",typeService.getType(id));
-        return "admin/types-input";
+        model.addAttribute("tag",tagService.getTag(id));
+        return "admin/tags-input";
     }
 
     /**
-     * put 方式更新数据库中的 type 信息
-     * @param type
+     * put 方式更新数据库中的 tag 信息
+     * @param tag
      * @param result
      * @param id
      * @param attributes
      * @return
      */
-    @PutMapping("types/{id}")
-    public String postDeleteType(@Valid Type type,
+    @PutMapping("tags/{id}")
+    public String postDeleteTag(@Valid Tag tag,
                               BindingResult result,
                               @PathVariable("id") Integer id,
                               RedirectAttributes attributes){
-        Type typeByName = typeService.getTypeByName(type.getName());
-        if(typeByName != null){
-            result.rejectValue("name","nameError","已经存在该分类");
+        Tag tagByName = tagService.getTagByName(tag.getName());
+        if(tagByName != null){
+            result.rejectValue("name","nameError","已经存在该标签");
         }
         if(result.hasErrors()){
-            return "admin/types-input";
+            return "admin/tags-input";
         }
-        Type t = typeService.updateType(id,type);
+        Tag t = tagService.updateTag(id,tag);
         if(t == null){
             attributes.addFlashAttribute("message","更新失败");
         }else {
             attributes.addFlashAttribute("message","更新成功");
         }
-        return "redirect:/admin/types";
+        return "redirect:/admin/tags";
     }
 
     /**
-     * 删除 type 类型，但是正常情况下我们的方法应该要符合rest风格，应该使用DeleteMapping
+     * 删除 tag 类型，但是正常情况下我们的方法应该要符合rest风格，应该使用DeleteMapping
      * 这里没有进行处理
      * @param id
      * @param attributes
      * @return
      */
-    @GetMapping("types/{id}/delete")
-    public String deleteType(@PathVariable("id") Integer id,
+    @GetMapping("tags/{id}/delete")
+    public String deleteTag(@PathVariable("id") Integer id,
                              RedirectAttributes attributes){
-        typeService.deleteType(id);
+        tagService.deleteTag(id);
         attributes.addFlashAttribute("message","删除成功");
-        return "redirect:/admin/types";
+        return "redirect:/admin/tags";
     }
 }

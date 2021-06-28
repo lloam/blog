@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Author: Administrator
@@ -20,11 +21,17 @@ public interface BlogService {
 
     Page<Blog> listBlog(Pageable pageable, BlogQuery blogQuery);
 
+    Page<Blog> listBlog(Pageable pageable,Integer tagId);
+
     Page<Blog> listBlog(Pageable pageable);
 
     Page<Blog> listBlog(String query,Pageable pageable);
 
     List<Blog> listBlogRecommendBlog(Integer size);
+
+    Map<String,List<Blog>> archivesBlog();
+
+    Long countBlog();
 
     Blog saveBlog(Blog blog);
 

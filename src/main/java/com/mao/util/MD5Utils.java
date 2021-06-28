@@ -39,8 +39,8 @@ public class MD5Utils {
             return null;
         }
     }
-
     public static void main(String[] args) {
-        System.out.println(code("111111"));
+        String code = code("111111");
+        System.out.println("加密："+code);
     }
 }

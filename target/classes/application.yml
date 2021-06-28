@@ -7,3 +7,5 @@ spring:
         enabled: true
   jpa:
     open-in-view: true
+# 定义回复头像
+comment.avatar: /images/avatar.png

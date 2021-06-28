@@ -28,6 +28,7 @@ public class Comment {
     private String email;
     private String content;
     private String avatar;
+    private boolean adminComment;// 标注这个是否为一个博主
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
 

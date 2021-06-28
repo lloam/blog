@@ -2646,7 +2646,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement; nes
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$7bff34d1.saveType(<generated>)
-	at com.mao.web.admin.TypeController.postAddType(TypeController.java:56)
+	at com.mao.controller.admin.TypeController.postAddType(TypeController.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2865,7 +2865,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement; nes
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$509fb52f.saveType(<generated>)
-	at com.mao.web.admin.TypeController.postAddType(TypeController.java:57)
+	at com.mao.controller.admin.TypeController.postAddType(TypeController.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3056,7 +3056,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement; nes
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$49f6843c.saveType(<generated>)
-	at com.mao.web.admin.TypeController.postAddType(TypeController.java:57)
+	at com.mao.controller.admin.TypeController.postAddType(TypeController.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -4668,7 +4668,7 @@ org.springframework.beans.FatalBeanException: Could not copy property 'blogs' fr
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$d6def634.updateType(<generated>)
-	at com.mao.web.admin.TypeController.postDeleteType(TypeController.java:103)
+	at com.mao.controller.admin.TypeController.postDeleteType(TypeController.java:103)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -5995,7 +5995,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement; nes
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$2e81f7b0.saveType(<generated>)
-	at com.mao.web.admin.TypeController.postAddType(TypeController.java:71)
+	at com.mao.controller.admin.TypeController.postAddType(TypeController.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6272,7 +6272,7 @@ org.springframework.orm.jpa.JpaSystemException: could not execute statement; nes
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TagServiceImpl$$EnhancerBySpringCGLIB$$486fdbc4.saveTag(<generated>)
-	at com.mao.web.admin.TagController.postAddType(TagController.java:73)
+	at com.mao.controller.admin.TagController.postAddType(TagController.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6541,7 +6541,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy100.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:38)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:34)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6635,7 +6635,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy100.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:38)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:34)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6762,7 +6762,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy132.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:34)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6919,7 +6919,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy150.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:40)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:34)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -7011,7 +7011,7 @@ java.lang.NullPointerException: null
 2021-06-26 17:43:23.941  INFO 2164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2021-06-26 17:43:30.176 ERROR 2164 --- [http-nio-8080-exec-4] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
-org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
@@ -7066,10 +7066,10 @@ org.springframework.http.converter.HttpMessageNotReadableException: Required req
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-06-26 17:43:30.177  WARN 2164 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)]
+2021-06-26 17:43:30.177  WARN 2164 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)]
 2021-06-26 17:44:16.845 ERROR 2164 --- [http-nio-8080-exec-8] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
-org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
@@ -7124,7 +7124,7 @@ org.springframework.http.converter.HttpMessageNotReadableException: Required req
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-06-26 17:44:16.846  WARN 2164 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)]
+2021-06-26 17:44:16.846  WARN 2164 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)]
 2021-06-26 17:44:23.776  INFO 2164 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-26 17:44:23.776  INFO 2164 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
 2021-06-26 17:44:23.782  INFO 2164 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
@@ -7160,7 +7160,7 @@ org.springframework.http.converter.HttpMessageNotReadableException: Required req
 2021-06-26 17:44:28.445  INFO 2164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2021-06-26 17:44:35.014 ERROR 2164 --- [http-nio-8080-exec-4] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
-org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
@@ -7215,7 +7215,7 @@ org.springframework.http.converter.HttpMessageNotReadableException: Required req
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-06-26 17:44:35.015  WARN 2164 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)]
+2021-06-26 17:44:35.015  WARN 2164 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.po.Blog,org.springframework.ui.Model)]
 2021-06-26 17:45:52.254  INFO 2164 --- [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-26 17:45:52.255  INFO 2164 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
 2021-06-26 17:45:52.258  INFO 2164 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
@@ -7286,7 +7286,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy178.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:38)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:36)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -7413,7 +7413,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy187.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:36)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -7570,7 +7570,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy205.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:37)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -7662,7 +7662,7 @@ java.lang.NullPointerException: null
 2021-06-26 17:56:48.864  INFO 2164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2021-06-26 17:56:56.178 ERROR 2164 --- [http-nio-8080-exec-5] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
-org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.dto.BlogQuery,org.springframework.ui.Model)
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.dto.BlogQuery,org.springframework.ui.Model)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
@@ -7717,7 +7717,7 @@ org.springframework.http.converter.HttpMessageNotReadableException: Required req
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-06-26 17:56:56.179  WARN 2164 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.dto.BlogQuery,org.springframework.ui.Model)]
+2021-06-26 17:56:56.179  WARN 2164 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.mao.controller.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.mao.dto.BlogQuery,org.springframework.ui.Model)]
 2021-06-26 17:58:00.147  INFO 2164 --- [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-26 17:58:00.147  INFO 2164 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
 2021-06-26 17:58:00.155  INFO 2164 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
@@ -8032,7 +8032,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy241.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:37)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8159,7 +8159,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy100.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:37)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8319,7 +8319,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy141.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:37)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8479,7 +8479,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy159.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:37)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8606,7 +8606,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy100.findAll(Unknown Source)
 	at com.mao.service.BlogServiceImpl.listBlog(BlogServiceImpl.java:39)
-	at com.mao.web.admin.BlogController.blogs(BlogController.java:37)
+	at com.mao.controller.admin.BlogController.blogs(BlogController.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8703,7 +8703,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field blogService in com.mao.web.admin.BlogController required a bean of type 'com.mao.service.BlogService' that could not be found.
+Field blogService in com.mao.controller.admin.BlogController required a bean of type 'com.mao.service.BlogService' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -9009,7 +9009,7 @@ org.springframework.dao.EmptyResultDataAccessException: No class com.mao.po.Type
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$1c69a4d.deleteType(<generated>)
-	at com.mao.web.admin.TypeController.deleteType(TypeController.java:132)
+	at com.mao.controller.admin.TypeController.deleteType(TypeController.java:132)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9169,7 +9169,7 @@ org.springframework.dao.EmptyResultDataAccessException: No class com.mao.po.Type
 2021-06-26 21:20:55.591 ERROR 3516 --- [http-nio-8080-exec-1] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
 java.lang.NullPointerException: null
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9262,7 +9262,7 @@ java.lang.NullPointerException: null
 2021-06-26 21:22:12.808 ERROR 3516 --- [http-nio-8080-exec-7] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
 java.lang.NullPointerException: null
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9368,7 +9368,7 @@ org.hibernate.LazyInitializationException: failed to lazily initialize a collect
 	at com.mao.po.Blog.toString(Blog.java:17)
 	at java.lang.String.valueOf(String.java:2994)
 	at java.io.PrintStream.println(PrintStream.java:821)
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9471,7 +9471,7 @@ org.hibernate.LazyInitializationException: failed to lazily initialize a collect
 	at com.mao.po.User.toString(User.java:17)
 	at java.lang.String.valueOf(String.java:2994)
 	at java.io.PrintStream.println(PrintStream.java:821)
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9574,7 +9574,7 @@ org.hibernate.LazyInitializationException: failed to lazily initialize a collect
 	at com.mao.po.User.toString(User.java:17)
 	at java.lang.String.valueOf(String.java:2994)
 	at java.io.PrintStream.println(PrintStream.java:821)
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9667,7 +9667,7 @@ org.hibernate.LazyInitializationException: failed to lazily initialize a collect
 2021-06-26 21:28:51.016 ERROR 11576 --- [http-nio-8080-exec-6] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
 java.lang.NullPointerException: null
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9760,7 +9760,7 @@ java.lang.NullPointerException: null
 2021-06-26 21:29:52.360 ERROR 11576 --- [http-nio-8080-exec-7] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/blogs,Exception : {}
 
 java.lang.NullPointerException: null
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -9969,7 +9969,7 @@ org.hibernate.LazyInitializationException: failed to lazily initialize a collect
 	at com.mao.po.Blog.toString(Blog.java:17)
 	at java.lang.String.valueOf(String.java:2994)
 	at java.io.PrintStream.println(PrintStream.java:821)
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -11227,7 +11227,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.BlogServiceImpl$$EnhancerBySpringCGLIB$$e6f95f8b.saveBlog(<generated>)
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:94)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:94)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -11384,7 +11384,7 @@ org.springframework.dao.InvalidDataAccessApiUsageException: The given id must no
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
 	at com.mao.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$81e8d4c3.getType(<generated>)
-	at com.mao.web.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
+	at com.mao.controller.admin.BlogController.addOrUpdateBlog(BlogController.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

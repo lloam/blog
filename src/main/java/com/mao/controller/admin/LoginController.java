@@ -1,4 +1,4 @@
-package com.mao.web.admin;
+package com.mao.controller.admin;
 
 import com.mao.po.User;
 import com.mao.service.UserService;
@@ -51,6 +51,10 @@ public class LoginController {
         if(user != null){
             user.setPassword(null);
             session.setAttribute("user",user);
+            if(user.getType() != 1){
+                attributes.addFlashAttribute("message","权限不够");
+                return "redirect:/admin";
+            }
             return "admin/index";
         }else {
             attributes.addFlashAttribute("message","用户名和密码错误");

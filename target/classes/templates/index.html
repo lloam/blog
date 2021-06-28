@@ -35,7 +35,7 @@
 
 
     <!--中间内容-->
-    <div class="m-container m-padded-tb-big">
+    <div class="m-container m-padded-tb-big animated fadeIn">
         <div class="ui container">
             <div class="ui stackable grid">
                 <!--左边博客列表-->
@@ -58,7 +58,6 @@
                     <div class="ui top attached segment">
                         <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
                             <div class="ui middle aligned mobile reversed stackable grid">
-
                                 <div class="eleven wide column">
                                     <h3 class="ui header">
                                         <a href="#" class="m-black" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" th:text="${blog.title}">你真的理解什么是财富自由吗？</a>
@@ -87,7 +86,7 @@
                                 </div>
 
                                 <div class="five wide column">
-                                    <a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id}}">
+                                    <a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}">
                                         <img src="https://unsplash.it/800/450?image=1005" th:src="@{${blog.firstPicture}}" alt="" class="ui rounded image m-picture-middle">
                                     </a>
                                 </div>
@@ -95,7 +94,7 @@
                         </div>
                     </div>
 
-                    <!--footer-->
+                    <!--footer分页-->
                     <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
                         <div class="ui middle aligned two column grid">
                             <div class="column">
@@ -119,42 +118,16 @@
                                     <i class="idea icon"></i>分类
                                 </div>
                                 <div class="right aligned column">
-                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                    <a href="#" target="_blank" th:href="@{/types/-1}">more <i class="angle double right icon"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="ui teal segment">
                             <div class="ui fluid vertical menu">
-                                <a href="#" class="item" th:each="type : ${types}">
+                                <a href="#" class="item autumn leaf type-item" th:href="@{/types/{id}(id=${type.id})}" th:each="type : ${types}">
                                     <span th:text="${type.name}">学习日志</span>
                                     <div class="ui teal basic left pointing label" th:text="${#arrays.length(type.blogs)}">13</div>
                                 </a>
-                                <!--/*-->
-                                <a href="#" class="item">
-                                    学习日志
-                                    <div class="ui teal basic left pointing label">13</div>
-                                </a>
-
-                                <a href="#" class="item">
-                                    学习日志
-                                    <div class="ui teal basic left pointing label">13</div>
-                                </a>
-
-                                <a href="#" class="item">
-                                    学习日志
-                                    <div class="ui teal basic left pointing label">13</div>
-                                </a>
-
-                                <a href="#" class="item">
-                                    学习日志
-                                    <div class="ui teal basic left pointing label">13</div>
-                                </a>
-
-                                <a href="#" class="item">
-                                    学习日志
-                                    <div class="ui teal basic left pointing label">13</div>
-                                </a>
-                                <!--*/-->
                             </div>
                         </div>
                     </div>
@@ -167,12 +140,12 @@
                                     <i class="tags icon"></i>标签
                                 </div>
                                 <div class="right aligned column">
-                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                    <a href="#" th:href="@{/tags/-1}" target="_blank">more <i class="angle double right icon"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="ui teal segment">
-                            <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
+                            <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
                                 <span th:text="${tag.name}">方法论</span>
                                 <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
                             </a>
@@ -255,6 +228,10 @@
    <script>
        $('.menu.toggle').click(function() {
            $('.m-item').toggleClass('m-mobile-hide');
+       });
+       $('.type-item').hover(function (){
+           $('.autumn.leaf')
+               .transition('pulse');
        });
    </script>
 </body>

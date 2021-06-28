@@ -20,12 +20,14 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
         registry.addInterceptor(new LoginInterceptor())
                 .addPathPatterns("/admin/**")
                 .excludePathPatterns("/admin")
+                .excludePathPatterns("/admin/register/register/register/forSecurity")
+                .excludePathPatterns("/admin/register/register/register/addOrUpdateUser")
                 .excludePathPatterns("/admin/login");
     }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**")
+        registry.addResourceHandler("/**")
                 .addResourceLocations("classpath:/static/");
     }
 }

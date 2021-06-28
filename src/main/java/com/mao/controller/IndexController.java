@@ -1,10 +1,9 @@
-package com.mao.web;
+package com.mao.controller;
 
-import com.mao.NotFoundException;
-import com.mao.dto.BlogQuery;
 import com.mao.service.BlogService;
 import com.mao.service.TagService;
 import com.mao.service.TypeService;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -53,5 +52,11 @@ public class IndexController {
                        Model model){
         model.addAttribute("blog",blogService.getAndConvert(id));
         return "blog";
+    }
+
+    @GetMapping("/footer/newBlog")
+    public String newBlogs(Model model){
+        model.addAttribute("newBlogs",blogService.listBlogRecommendBlog(3));
+        return "fragment/_fragments_front :: newBlogList";
     }
 }

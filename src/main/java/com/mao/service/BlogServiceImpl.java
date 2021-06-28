@@ -17,13 +17,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import javax.persistence.criteria.*;
+import java.util.*;
 
 /**
  * Author: Administrator
@@ -55,6 +50,9 @@ public class BlogServiceImpl implements BlogService {
         BeanUtils.copyProperties(blog,blogReturn);
         String content = blogReturn.getContent();
         blogReturn.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+
+        // 每次点击浏览博客之后，该篇博客的浏览次数+1
+        blogRepository.updateViews(id);
         return blogReturn;
     }
 
@@ -91,6 +89,22 @@ public class BlogServiceImpl implements BlogService {
     }
 
     /**
+     * 根据 typeId 查询到所有的博客
+     * @param pageable
+     * @param tagId
+     * @return
+     */
+    public Page<Blog> listBlog(Pageable pageable, Integer tagId) {
+        return blogRepository.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Join<Object, Object> join = root.join("tags");
+                return criteriaBuilder.equal(join.get("id"),tagId);
+            }
+        },pageable);
+    }
+
+    /**
      * 直接分页
      * @param pageable
      * @return
@@ -109,6 +123,28 @@ public class BlogServiceImpl implements BlogService {
         Sort sort = Sort.by(Sort.Direction.DESC, "updateTime");
         Pageable pageable = PageRequest.of(0, size, sort);
         return blogRepository.findTopRecommend(pageable);
+    }
+
+    @Override
+    public Map<String, List<Blog>> archivesBlog() {
+        // 根据年份存储博客
+        Map<String, List<Blog>> map = new LinkedHashMap<>();
+        // 先将博客的年份都查出来
+        List<String> years = blogRepository.findGroupYears();
+        // 再遍历年份，根据年份将每一年的博客查询来
+        for (String year : years) {
+            List<Blog> blogByYear = blogRepository.findByYear(year);
+            map.put(year,blogByYear);
+        }
+        return map;
+    }
+
+    /**
+     * 得到所有博客数量
+     * @return
+     */
+    public Long countBlog() {
+        return blogRepository.count();
     }
 
     @Transactional

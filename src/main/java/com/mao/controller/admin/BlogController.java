@@ -1,9 +1,10 @@
-package com.mao.web.admin;
+package com.mao.controller.admin;
 
 import com.mao.dto.BlogQuery;
 import com.mao.po.Blog;
 import com.mao.po.User;
 import com.mao.service.BlogService;
+import com.mao.service.CommentService;
 import com.mao.service.TagService;
 import com.mao.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,8 @@ public class BlogController {
     private TypeService typeService;
     @Autowired
     private TagService tagService;
+    @Autowired
+    private CommentService commentService;
 
     /**
      * 获取所有的博客，并且分页
@@ -131,8 +134,16 @@ public class BlogController {
         return "admin/blogs-input";
     }
 
+    /**
+     * 删除博客
+     * 这里需要注意的是删除博客的同时，评论需要先删除，因为 blog 的主键作为了 comment 的外键。如果单单删除了 blog ，那么评论的外键就没有了
+     * @param id
+     * @param attributes
+     * @return
+     */
     @GetMapping("/blogs/{id}/delete")
     public String delete(@PathVariable("id") Integer id,RedirectAttributes attributes){
+        commentService.deleteComment(id);
         blogService.deleteBlog(id);
         attributes.addFlashAttribute("message","删除成功");
         return "redirect:/admin/blogs";

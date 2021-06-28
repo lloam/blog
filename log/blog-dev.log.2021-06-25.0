@@ -67,7 +67,7 @@
 2021-06-25 19:59:17.880 ERROR 5392 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
 
 java.lang.ArithmeticException: / by zero
-	at com.mao.web.IndexController.index(IndexController.java:16)
+	at com.mao.controller.IndexController.index(IndexController.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -308,7 +308,7 @@ java.lang.ArithmeticException: / by zero
 2021-06-25 20:06:44.415 ERROR 5392 --- [http-nio-8080-exec-1] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/,Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.mao.web.IndexController.index(IndexController.java:16)
+	at com.mao.controller.IndexController.index(IndexController.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -427,7 +427,7 @@ java.lang.ArithmeticException: / by zero
 2021-06-25 20:22:18.133 ERROR 5392 --- [http-nio-8080-exec-3] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/,Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.mao.web.IndexController.index(IndexController.java:16)
+	at com.mao.controller.IndexController.index(IndexController.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -483,7 +483,7 @@ java.lang.ArithmeticException: / by zero
 2021-06-25 20:23:43.268 ERROR 5392 --- [http-nio-8080-exec-5] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/,Exception : {}
 
 java.lang.ArithmeticException: / by zero
-	at com.mao.web.IndexController.index(IndexController.java:16)
+	at com.mao.controller.IndexController.index(IndexController.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -602,7 +602,7 @@ java.lang.ArithmeticException: / by zero
 2021-06-25 20:27:45.444 ERROR 5392 --- [http-nio-8080-exec-1] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/,Exception : {}
 
 com.mao.NotFoundException: 博客不存在
-	at com.mao.web.IndexController.index(IndexController.java:20)
+	at com.mao.controller.IndexController.index(IndexController.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -658,7 +658,7 @@ com.mao.NotFoundException: 博客不存在
 2021-06-25 20:27:46.143 ERROR 5392 --- [http-nio-8080-exec-2] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/,Exception : {}
 
 com.mao.NotFoundException: 博客不存在
-	at com.mao.web.IndexController.index(IndexController.java:20)
+	at com.mao.controller.IndexController.index(IndexController.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -777,7 +777,7 @@ com.mao.NotFoundException: 博客不存在
 2021-06-25 20:30:35.848 ERROR 5392 --- [http-nio-8080-exec-1] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/,Exception : {}
 
 com.mao.NotFoundException: 博客不存在
-	at com.mao.web.IndexController.index(IndexController.java:20)
+	at com.mao.controller.IndexController.index(IndexController.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -900,7 +900,7 @@ com.mao.NotFoundException: 博客不存在
 2021-06-25 20:33:34.486 ERROR 5392 --- [http-nio-8080-exec-2] c.m.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/,Exception : {}
 
 com.mao.NotFoundException: 博客不存在
-	at com.mao.web.IndexController.index(IndexController.java:20)
+	at com.mao.controller.IndexController.index(IndexController.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1220,7 +1220,7 @@ Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be
 2021-06-25 20:57:01.623  INFO 10996 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 20:57:01.624  INFO 10996 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 20:57:01.625  INFO 10996 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-06-25 20:57:01.640  INFO 10996 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/1/hello, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[1, hello])
+2021-06-25 20:57:01.640  INFO 10996 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/1/hello, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[1, hello])
 2021-06-25 20:57:01.643  INFO 10996 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:14:55.073  INFO 6124 --- [restartedMain] com.mao.BlogApplication                  : Starting BlogApplication using Java 1.8.0_151 on X6X8-20190310CV with PID 6124 (C:\Users\Administrator\Desktop\myBlog\blog\target\classes started by Administrator in C:\Users\Administrator\Desktop\myBlog\blog)
 2021-06-25 21:14:55.075 DEBUG 6124 --- [restartedMain] com.mao.BlogApplication                  : Running with Spring Boot v2.5.2, Spring v5.3.8
@@ -1255,19 +1255,19 @@ Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be
 2021-06-25 21:14:58.424  INFO 6124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:14:58.424  INFO 6124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:14:58.425  INFO 6124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:14:58.507  INFO 6124 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:14:58.507  INFO 6124 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:14:58.517  INFO 6124 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:15:07.245  INFO 6124 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:15:07.245  INFO 6124 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:15:07.246  INFO 6124 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:15:09.781  INFO 6124 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:15:09.781  INFO 6124 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:15:09.781  INFO 6124 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:15:30.523  INFO 6124 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:15:30.523  INFO 6124 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=127.0.0.1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:15:30.524  INFO 6124 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:18:06.700  INFO 6124 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:18:06.700  INFO 6124 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:18:06.701  INFO 6124 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:18:10.711  INFO 6124 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:18:10.711  INFO 6124 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:18:10.712  INFO 6124 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:18:40.155  INFO 6124 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:18:40.155  INFO 6124 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:18:40.156  INFO 6124 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:19:00.456  INFO 11588 --- [restartedMain] com.mao.BlogApplication                  : Starting BlogApplication using Java 1.8.0_151 on X6X8-20190310CV with PID 11588 (C:\Users\Administrator\Desktop\myBlog\blog\target\classes started by Administrator in C:\Users\Administrator\Desktop\myBlog\blog)
 2021-06-25 21:19:00.459 DEBUG 11588 --- [restartedMain] com.mao.BlogApplication                  : Running with Spring Boot v2.5.2, Spring v5.3.8
@@ -1302,9 +1302,9 @@ Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be
 2021-06-25 21:19:09.959  INFO 11588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:19:09.959  INFO 11588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:19:09.960  INFO 11588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:19:10.037  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:19:10.037  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:19:10.047  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:19:15.119  INFO 11588 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:19:15.119  INFO 11588 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:19:15.121  INFO 11588 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:21:25.591  INFO 11588 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-25 21:21:25.594  INFO 11588 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
@@ -1339,10 +1339,10 @@ Caused by: java.lang.ClassCastException: ch.qos.logback.classic.Logger cannot be
 2021-06-25 21:21:30.294  INFO 11588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:21:30.296  INFO 11588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:21:30.297  INFO 11588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:21:30.305  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:21:30.305  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:21:30.309  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:21:30.343  WARN 11588 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
-2021-06-25 21:24:46.092  INFO 11588 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:24:46.092  INFO 11588 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:24:46.092  INFO 11588 --- [http-nio-8080-exec-6] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:24:46.103 ERROR 11588 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
@@ -1563,11 +1563,11 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-06-25 21:26:08.884  INFO 11588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:26:08.885  INFO 11588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:26:08.886  INFO 11588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:26:08.894  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:26:08.894  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:26:08.900  INFO 11588 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:26:08.954  WARN 11588 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
 2021-06-25 21:26:08.965  WARN 11588 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/wechat.jpg
-2021-06-25 21:26:37.598  INFO 11588 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:26:37.598  INFO 11588 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:26:37.598  INFO 11588 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:26:37.616  WARN 11588 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
 2021-06-25 21:26:37.622  WARN 11588 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /images/wechat.jpg
@@ -1605,12 +1605,12 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-06-25 21:28:18.520  INFO 13016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:28:18.520  INFO 13016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:28:18.521  INFO 13016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-06-25 21:28:18.601  INFO 13016 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:28:18.601  INFO 13016 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:28:18.612  INFO 13016 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:28:18.905  WARN 13016 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/wechat.jpg
 2021-06-25 21:28:18.905  WARN 13016 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
 2021-06-25 21:28:23.267  WARN 13016 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
-2021-06-25 21:32:31.189  INFO 13016 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:32:31.189  INFO 13016 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:32:31.189  INFO 13016 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:32:31.212  WARN 13016 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
 2021-06-25 21:32:31.231  WARN 13016 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /images/wechat.jpg
@@ -1648,7 +1648,7 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-06-25 21:33:49.384  INFO 13016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:33:49.385  INFO 13016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:33:49.387  INFO 13016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-06-25 21:33:49.396  INFO 13016 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:33:49.396  INFO 13016 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:33:49.399  INFO 13016 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:33:49.445  WARN 13016 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/wechat.jpg
 2021-06-25 21:33:49.445  WARN 13016 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
@@ -1685,7 +1685,7 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-06-25 21:34:40.366  INFO 4904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:34:40.366  INFO 4904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:34:40.368  INFO 4904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:34:40.444  INFO 4904 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:34:40.444  INFO 4904 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:34:40.454  INFO 4904 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:34:40.718  WARN 4904 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /css/me.css
 2021-06-25 21:34:40.719  WARN 4904 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /images/wechat.jpg
@@ -1723,7 +1723,7 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-06-25 21:41:07.889  INFO 4904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:41:07.890  INFO 4904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:41:07.891  INFO 4904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:41:07.900  INFO 4904 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:41:07.900  INFO 4904 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:41:07.904  INFO 4904 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:42:37.283  INFO 1892 --- [restartedMain] com.mao.BlogApplication                  : Starting BlogApplication using Java 1.8.0_151 on X6X8-20190310CV with PID 1892 (C:\Users\Administrator\Desktop\myBlog\blog\target\classes started by Administrator in C:\Users\Administrator\Desktop\myBlog\blog)
 2021-06-25 21:42:37.285 DEBUG 1892 --- [restartedMain] com.mao.BlogApplication                  : Running with Spring Boot v2.5.2, Spring v5.3.8
@@ -1758,11 +1758,11 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2021-06-25 21:42:49.554  INFO 1892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:42:49.555  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:42:49.557  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:42:49.637  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:42:49.637  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:42:49.647  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:46:16.054  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:46:16.054  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:46:16.055  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:55:29.092  INFO 1892 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:55:29.092  INFO 1892 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:55:29.092  INFO 1892 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:55:29.134 ERROR 1892 --- [http-nio-8080-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-10] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
@@ -1979,7 +1979,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2021-06-25 21:57:57.395  INFO 1892 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 21:57:57.396  INFO 1892 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 21:57:57.397  INFO 1892 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 21:57:57.406  INFO 1892 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:57:57.406  INFO 1892 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:57:57.409  INFO 1892 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:57:57.429 ERROR 1892 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
@@ -2133,7 +2133,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-06-25 21:57:59.917  INFO 1892 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:57:59.917  INFO 1892 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:57:59.917  INFO 1892 --- [http-nio-8080-exec-8] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 21:57:59.923 ERROR 1892 --- [http-nio-8080-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-8] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
@@ -2287,11 +2287,11 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-06-25 21:58:45.804  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:58:45.804  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:58:45.805  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 21:59:00.239  INFO 1892 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 21:59:00.239  INFO 1892 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 21:59:00.239  INFO 1892 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 22:02:39.096  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:02:39.096  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:02:39.097  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 22:02:39.109 ERROR 1892 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
@@ -2504,15 +2504,15 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'/
 2021-06-25 22:04:40.091  INFO 1892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 22:04:40.092  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 22:04:40.092  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-06-25 22:04:40.101  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:04:40.101  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:04:40.104  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 22:05:04.540  INFO 1892 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:05:04.540  INFO 1892 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:05:04.540  INFO 1892 --- [http-nio-8080-exec-4] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 22:05:14.915  INFO 1892 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:05:14.915  INFO 1892 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:05:14.915  INFO 1892 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 22:05:31.317  INFO 1892 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:05:31.317  INFO 1892 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:05:31.317  INFO 1892 --- [http-nio-8080-exec-3] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 22:07:40.661  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:07:40.661  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:07:40.662  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 22:16:43.930  INFO 1892 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-25 22:16:43.932  INFO 1892 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
@@ -2577,13 +2577,13 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'/
 2021-06-25 22:16:56.527  INFO 1892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 22:16:56.528  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 22:16:56.529  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 22:16:56.538  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[])
+2021-06-25 22:16:56.538  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.blog, args=[])
 2021-06-25 22:16:56.541  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
-2021-06-25 22:17:45.730  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[])
+2021-06-25 22:17:45.730  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.blog, args=[])
 2021-06-25 22:17:45.730  INFO 1892 --- [http-nio-8080-exec-7] com.mao.aspect.LogAspect                 : Result : blog
-2021-06-25 22:20:10.651  INFO 1892 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:20:10.651  INFO 1892 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:20:10.651  INFO 1892 --- [http-nio-8080-exec-10] com.mao.aspect.LogAspect                 : Result : index
-2021-06-25 22:20:28.516  INFO 1892 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[])
+2021-06-25 22:20:28.516  INFO 1892 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.blog, args=[])
 2021-06-25 22:20:28.517  INFO 1892 --- [http-nio-8080-exec-9] com.mao.aspect.LogAspect                 : Result : blog
 2021-06-25 22:20:43.843  INFO 1892 --- [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-25 22:20:43.844  INFO 1892 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
@@ -2648,13 +2648,13 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{'/
 2021-06-25 22:20:56.659  INFO 1892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 22:20:56.661  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 22:20:56.662  INFO 1892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 22:20:56.669  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[])
+2021-06-25 22:20:56.669  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.blog, args=[])
 2021-06-25 22:20:56.673  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
-2021-06-25 22:21:29.889  INFO 1892 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[])
+2021-06-25 22:21:29.889  INFO 1892 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.blog, args=[])
 2021-06-25 22:21:29.889  INFO 1892 --- [http-nio-8080-exec-2] com.mao.aspect.LogAspect                 : Result : blog
-2021-06-25 22:21:40.025  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[])
+2021-06-25 22:21:40.025  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.blog, args=[])
 2021-06-25 22:21:40.026  INFO 1892 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : blog
-2021-06-25 22:27:41.676  INFO 1892 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.blog, args=[])
+2021-06-25 22:27:41.676  INFO 1892 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.blog, args=[])
 2021-06-25 22:27:41.676  INFO 1892 --- [http-nio-8080-exec-5] com.mao.aspect.LogAspect                 : Result : blog
 2021-06-25 22:28:39.734  INFO 1892 --- [Thread-48] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-06-25 22:28:39.734  INFO 1892 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
@@ -2787,7 +2787,7 @@ Consider the following:
 2021-06-25 22:29:30.536  INFO 14020 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-06-25 22:29:30.537  INFO 14020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-06-25 22:29:30.538  INFO 14020 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-25 22:29:30.620  INFO 14020 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.web.IndexController.index, args=[])
+2021-06-25 22:29:30.620  INFO 14020 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Request : LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.mao.controller.IndexController.index, args=[])
 2021-06-25 22:29:30.630  INFO 14020 --- [http-nio-8080-exec-1] com.mao.aspect.LogAspect                 : Result : index
 2021-06-25 23:19:54.141  INFO 6888 --- [restartedMain] com.mao.BlogApplication                  : Starting BlogApplication using Java 1.8.0_151 on X6X8-20190310CV with PID 6888 (C:\Users\Administrator\Desktop\myBlog\blog\target\classes started by Administrator in C:\Users\Administrator\Desktop\myBlog\blog)
 2021-06-25 23:19:54.144 DEBUG 6888 --- [restartedMain] com.mao.BlogApplication                  : Running with Spring Boot v2.5.2, Spring v5.3.8

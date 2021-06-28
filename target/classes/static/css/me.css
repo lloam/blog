@@ -161,7 +161,9 @@
     .m-black {
         color: #333 !important;
     }
-    
+    .m-teal {
+        color: #00b5ad !important;
+    }
     .m-mobile-show {
         display: none !important;
     }
@@ -171,8 +173,8 @@
         height: 450px !important;
     }
     .m-picture-middle {
-        width: 140px !important;
-        height: 90px !important;
+        width: 180px !important;
+        height: 120px !important;
     }
     /*------picture------*/
     .m-li-margin {

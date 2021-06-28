@@ -13,17 +13,16 @@
 </head>
 <body>
 
-
 <!--导航-->
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">Richard</h2>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n == 1} ? 'active'"><i class="home icon"></i>首页</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n == 2} ? 'active'"><i class="idea icon"></i>分类</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n == 3} ? 'active'"><i class="tags icon"></i>标签</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n == 4} ? 'active'"><i class="clone icon"></i>归档</a>
-            <a href="#" class="m-item item m-mobile-hide" th:classappend="${n == 5} ? 'active'"><i class="info icon"></i>关于我</a>
+            <a href="#" class="m-item item m-mobile-hide" th:href="@{/}" th:classappend="${n == 1} ? 'active'"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide" th:href="@{/types/-1}" th:classappend="${n == 2} ? 'active'"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide" th:href="@{/tags/-1}" th:classappend="${n == 3} ? 'active'"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide" th:href="@{/archives}" th:classappend="${n == 4} ? 'active'"><i class="clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide" th:href="@{/about}" th:classappend="${n == 5} ? 'active'"><i class="info icon"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" target="_blank" method="post">
                     <div class="ui icon inverted transparent input m-margin-tb-tiny">
@@ -55,10 +54,10 @@
 
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
-                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
-                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                <div id="newBlogs-container">
+                    <div class="ui inverted link list" th:fragment="newBlogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" class="item m-text-thin" th:text="${blog.title}" th:each="blog  : ${newBlogs}">用户故事（User Story）</a>
+                    </div>
                 </div>
             </div>
 
@@ -91,6 +90,9 @@
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script>
+        $('#newBlogs-container').load(/*[[@{/footer/newBlog}]]*/"/footer/newBlog");
+    </script>
 </th:block>
 </body>
 </html>
