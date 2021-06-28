@@ -3,6 +3,7 @@ package com.mao.controller;
 import com.mao.service.BlogService;
 import com.mao.service.TagService;
 import com.mao.service.TypeService;
+import com.mao.util.FooterUtils;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -29,6 +30,8 @@ public class IndexController {
     private TypeService typeService;
     @Autowired
     private TagService tagService;
+    @Autowired
+    private FooterUtils footerUtils;
     @GetMapping("/")
     public String index(@PageableDefault(size = 8,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
                         Model model){
@@ -56,7 +59,13 @@ public class IndexController {
 
     @GetMapping("/footer/newBlog")
     public String newBlogs(Model model){
-        model.addAttribute("newBlogs",blogService.listBlogRecommendBlog(3));
+        footerUtils.getRecommendBlog(model);
         return "fragment/_fragments_front :: newBlogList";
+    }
+
+    @GetMapping("/footer/counts")
+    public String counts(Model model){
+        footerUtils.getCount(model);
+        return "fragment/_fragments_front :: counts";
     }
 }

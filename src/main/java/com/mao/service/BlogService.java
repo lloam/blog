@@ -38,4 +38,6 @@ public interface BlogService {
     Blog updateBlog(Integer id,Blog blog);
 
     void deleteBlog(Integer id);
+
+    Blog getBlogAboutMe(String title);
 }

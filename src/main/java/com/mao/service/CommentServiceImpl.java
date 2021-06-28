@@ -46,4 +46,12 @@ public class CommentServiceImpl implements CommentService {
     public void deleteComment(Integer blogId) {
         commentRepository.deleteCommentByBlogId(blogId);
     }
+
+    /**
+     * 获取总评论数
+     * @return
+     */
+    public long commentCount() {
+        return commentRepository.count();
+    }
 }

@@ -41,4 +41,7 @@ public interface BlogRepository extends JpaRepository<Blog,Integer>, JpaSpecific
     List<Blog> findByYear(String year);
 
     long count();
+
+    @Query("select b from Blog b where b.title = ?1")
+    Blog findBlogByTitle(String title);
 }

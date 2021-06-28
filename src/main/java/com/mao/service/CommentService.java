@@ -17,4 +17,6 @@ public interface CommentService {
 
 
     void deleteComment(Integer blogId);
+
+    long commentCount();
 }

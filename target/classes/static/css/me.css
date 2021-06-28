@@ -1,7 +1,10 @@
     body {
-        background: url("../images/bg.png");
+        background: url("https://gitee.com/lloamhh/spring-img/raw/master/img/blog/831.jpg") no-repeat;
+        background-size: cover;
     }
-    
+    .m-body-login {
+        background: url("../images/bg.png") !important;
+    }
     .m-padded-mini {
         padding: 0.2em !important;
     }
@@ -108,7 +111,9 @@
         margin-left: 1em !important;
     }
     /*------opacity------*/
-    
+    .m-opacity {
+        opacity: 0.9 !important;
+    }
     .m-opacity-mini {
         opacity: 0.8 !important;
     }

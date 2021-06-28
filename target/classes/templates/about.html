@@ -41,49 +41,40 @@
             <div class="ui stackable grid">
                 <div class="eleven wide column">
                     <div class="ui segment">
-                        <img src="https://unsplash.it/800/600?image=1009" alt="" class="ui rounded image">
+                        <img src="https://unsplash.it/800/600?image=1009" th:src="@{${aboutMe.firstPicture}}" alt="" class="ui rounded image m-picture-big">
                     </div>
 
                 </div>
 
                 <div class="five wide column">
                     <div class="ui top attached segment">
-                        <div class="ui header">关于我</div>
+                        <div class="ui header" th:text="${aboutMe.title}">关于我</div>
                     </div>
 
                     <div class="ui attached segment">
-                        <p class="m-text">王大双，学生，就读于蚌埠学院，一个对编程感兴趣的大学生；一个喜欢代码的学习者，希望能通过这个博客学习到一些知识，结识到志同道合的伙伴。</p>
-                        <p class="m-text">热爱编程，面向对象，正在探索如何使用java编程语言实现相应的技术…</p>
+                        <p maxlength="150" type="text" th:text="${aboutMe.content}">王大双，学生，就读于蚌埠学院，一个对编程感兴趣的大学生；一个喜欢代码的学习者，希望能通过这个博客学习到一些知识，结识到志同道合的伙伴。</p>
                     </div>
 
                     <div class="ui attached segment">
-                        <div class="ui orange basic left pointing label">编程</div>
-                        <div class="ui orange basic left pointing label">阅读</div>
-                        <div class="ui orange basic left pointing label">思考</div>
-                        <div class="ui orange basic left pointing label">跑步</div>
-
-
+                        <div class="ui orange basic left pointing m-margin-tb-tiny label m-padded-small" th:each="type : ${types}" th:text="${type.name}">编程</div>
                     </div>
 
                     <div class="ui attached segment">
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">MySQL</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">HTNL</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">CSS3</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Android</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">…</div>
+                        <div class="ui teal basic left pointing label m-margin-tb-tiny m-padded-small" th:each="tag : ${tags}" th:text="${tag.name}">Java</div>
                     </div>
 
                     <div class="ui bottom attached segment">
-                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui github circular icon button" th:href="${github}" target="_blank"><i class="github icon"></i></a>
                         <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
                         <a href="#" class="ui qq circular icon button" data-content="2196143404" data-position="bottom center"><i class="qq icon"></i></a>
                     </div>
 
                     <div class="ui wechat-qr flowing popup transition hidden">
-                        <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 120px;">
+                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 120px;">
                     </div>
-
+                    <div class="ui github-com flowing popup transition hidden">
+                        <span>点击进入github</span>
+                    </div>
                 </div>
 
             </div>
@@ -146,6 +137,11 @@
 
         $('.wechat').popup({
             popup: $('.wechat-qr'),
+            on: 'hover',
+            position: 'bottom center'
+        });
+        $('.github').popup({
+            popup: $('.github-com'),
             on: 'hover',
             position: 'bottom center'
         });

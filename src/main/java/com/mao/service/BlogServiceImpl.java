@@ -171,4 +171,13 @@ public class BlogServiceImpl implements BlogService {
     public void deleteBlog(Integer id) {
         blogRepository.deleteById(id);
     }
+
+    /**
+     * 查找关于我的博客
+     * @param title
+     * @return
+     */
+    public Blog getBlogAboutMe(String title) {
+        return blogRepository.findBlogByTitle(title);
+    }
 }

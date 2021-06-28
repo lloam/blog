@@ -22,4 +22,6 @@ public interface CommentRepository extends JpaRepository<Comment,Integer> {
     @Modifying
     @Query("delete from Comment c where c.blog.id = ?1")
     Integer deleteCommentByBlogId(Integer blogId);
+
+    long count();
 }
