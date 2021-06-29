@@ -2,16 +2,16 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     # 数据库连接为服务器
-    url: jdbc:mysql://60.205.206.201:3306/blog?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://*******:3306/blog?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: root
-    password: 123456
+    password: *******
   jpa:
     hibernate:
       # 实体类更改数据库表结构也会相应更改，生产环境实体变动数据库不变动
       ddl-auto: none
     show-sql: false
   redis:
-    host: 60.205.206.201
+    host: ******
     port: 6379
 
 # 日志级别
