@@ -1,10 +1,11 @@
-package com.mao.service;
+package com.mao.service.Impl;
 
 import com.mao.NotFoundException;
 import com.mao.dao.BlogRepository;
 import com.mao.dto.BlogQuery;
 import com.mao.po.Blog;
 import com.mao.po.Type;
+import com.mao.service.BlogService;
 import com.mao.util.MarkdownUtils;
 import com.mao.util.MyBeanUtils;
 import org.springframework.beans.BeanUtils;

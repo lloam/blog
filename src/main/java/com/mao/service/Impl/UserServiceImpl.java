@@ -1,8 +1,9 @@
-package com.mao.service;
+package com.mao.service.Impl;
 
 import com.mao.NotFoundException;
 import com.mao.dao.UserRepository;
 import com.mao.po.User;
+import com.mao.service.UserService;
 import com.mao.util.MD5Utils;
 import com.mao.util.MyBeanUtils;
 import org.springframework.beans.BeanUtils;

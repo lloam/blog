@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <!--导航-->
     <nav th:replace="/fragment/_fragments_front :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
@@ -34,14 +33,13 @@
     </nav>
 
     <!--中间内容-->
-    <div class="m-container m-padded-tb-big animated fadeInDown m-opacity">
+    <div class="m-container m-padded-tb-big m-opacity">
         <div class="ui container">
             <div class="ui stackable grid">
                 <!--左边博客列表-->
-                <div class="eleven wide column">
-
+                <div class="eleven wide column animate__animated animate__bounce">
                     <!--header-->
-                    <div class="ui top attached segment">
+                    <div class="ui top attached segment animate__fadeInDown">
                         <div class="ui middle aligned two column grid">
                             <div class="column">
                                 <h3 class="ui teal header">博客</h3>
@@ -110,7 +108,7 @@
                 <div class="five wide column">
 
                     <!--分类-->
-                    <div class="ui segments">
+                    <div class="ui segments animate__animated animate__fadeInRight">
                         <div class="ui secondary segment">
                             <div class="ui two column grid">
                                 <div class="column">
@@ -132,7 +130,7 @@
                     </div>
 
                     <!--标签-->
-                    <div class="segments">
+                    <div class="segments animate__animated animate__fadeInRight">
                         <div class="ui secondary segment">
                             <div class="ui two column grid">
                                 <div class="column">
@@ -152,7 +150,7 @@
                     </div>
 
                     <!--最新推荐 -->
-                    <div class="ui segments m-margin-top-large">
+                    <div class="ui segments m-margin-top-large animate__animated animate__fadeInRight">
                         <div class="ui secondary segment">
                             <div class="column">
                                 <i class="bookmark icon"></i>最新推荐

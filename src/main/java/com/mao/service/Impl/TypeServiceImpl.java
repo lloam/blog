@@ -1,8 +1,9 @@
-package com.mao.service;
+package com.mao.service.Impl;
 
 import com.mao.NotFoundException;
 import com.mao.dao.TypeRepository;
 import com.mao.po.Type;
+import com.mao.service.TypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

@@ -1,10 +1,11 @@
-package com.mao.service;
+package com.mao.service.Impl;
 
 import com.mao.NotFoundException;
 import com.mao.dao.TagRepository;
 import com.mao.dao.TypeRepository;
 import com.mao.po.Tag;
 import com.mao.po.Type;
+import com.mao.service.TagService;
 import com.mao.util.IdsConvertToList;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

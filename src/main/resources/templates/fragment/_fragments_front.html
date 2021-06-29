@@ -6,10 +6,11 @@
     <title th:replace="${title}">博客详情</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
-    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+<!--    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">-->
     <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
     <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -22,7 +23,8 @@
             <a href="#" class="m-item item m-mobile-hide" th:href="@{/types/-1}" th:classappend="${n == 2} ? 'active'"><i class="idea icon"></i>分类</a>
             <a href="#" class="m-item item m-mobile-hide" th:href="@{/tags/-1}" th:classappend="${n == 3} ? 'active'"><i class="tags icon"></i>标签</a>
             <a href="#" class="m-item item m-mobile-hide" th:href="@{/archives}" th:classappend="${n == 4} ? 'active'"><i class="clone icon"></i>归档</a>
-            <a href="#" class="m-item item m-mobile-hide" th:href="@{/about(title='关于我')}" th:classappend="${n == 5} ? 'active'"><i class="info icon"></i>关于我</a>
+            <a href="#" class="m-item item m-mobile-hide" th:href="@{/messages}" th:classappend="${n == 5} ? 'active'"><i class="bullhorn icon"></i>留言区</a>
+            <a href="#" class="m-item item m-mobile-hide" th:href="@{/about(title='关于我')}" th:classappend="${n == 6} ? 'active'"><i class="info icon"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" target="_blank" method="post">
                     <div class="ui icon inverted transparent input m-margin-tb-tiny">

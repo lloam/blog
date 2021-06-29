@@ -1,7 +1,8 @@
-package com.mao.service;
+package com.mao.service.Impl;
 
 import com.mao.dao.CommentRepository;
 import com.mao.po.Comment;
+import com.mao.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;

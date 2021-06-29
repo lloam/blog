@@ -9,7 +9,9 @@ spring:
       # 实体类更改数据库表结构也会相应更改
       ddl-auto: update
     show-sql: true
-
+  redis:
+    port: 6379
+    host: 127.0.0.1
 # 日志级别
 logging:
   level:

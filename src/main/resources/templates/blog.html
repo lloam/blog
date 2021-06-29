@@ -39,7 +39,7 @@
     </nav>
 
     <!--中间内容-->
-    <div id="waypoint" class="m-container-small m-padded-tb-big animated fadeIn m-opacity">
+    <div id="waypoint" class="m-container-small m-padded-tb-big m-opacity animate__animated animate__fadeInDown">
         <div class="ui container">
 
             <div class="ui top attached segment">
@@ -58,7 +58,7 @@
             </div>
 
 
-            <div class="ui attached segment">
+            <div class="ui center aligned attached segment">
                 <!--图片区域-->
                 <img src="https://unsplash.it/800/450?image=1006" th:src="@{${blog.firstPicture}}" alt="" class="ui fluid rounded image m-picture-big m-mobile-picture">
             </div>
@@ -480,6 +480,10 @@ h5,h6{font-size:1em;}
                     <div class="ui basic teal left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</div>
                 </div>
 
+                <!--赞赏-->
+                <div class="ui center aligned basic segment">
+                    <span>--------------------end--------------------</span>
+                </div>
                 <!--赞赏-->
                 <div class="ui center aligned basic segment">
                     <button id="payButton" class="ui orange basic circular button" th:if="${blog.isAppreciation()}">赞赏</button>
