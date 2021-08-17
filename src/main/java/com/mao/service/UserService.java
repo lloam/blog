@@ -24,4 +24,6 @@ public interface UserService {
     Page<User> findAllUser(Pageable pageable);
 
     void deleteUser(Integer id);
+
+    User findByUsername(String username);
 }

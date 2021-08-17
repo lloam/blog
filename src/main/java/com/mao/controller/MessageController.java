@@ -33,7 +33,7 @@ public class MessageController {
     @Value("${comment.avatar}")
     private String avatar;
     @GetMapping("/messages")
-    public String message(@PageableDefault(size = 5,sort = "createTime",direction = Sort.Direction.DESC) Pageable pageable,
+    public String message(@PageableDefault(size = 10,sort = "createTime",direction = Sort.Direction.DESC) Pageable pageable,
                           Model model){
         Page<Message> page = messageService.queryMessage(pageable);
         model.addAttribute("page",page);
@@ -56,7 +56,7 @@ public class MessageController {
     }
 
     @GetMapping("/messages/ok")
-    public String messageOk(@PageableDefault(size = 5,sort = "createTime",direction = Sort.Direction.DESC) Pageable pageable,
+    public String messageOk(@PageableDefault(size = 10,sort = "createTime",direction = Sort.Direction.DESC) Pageable pageable,
                             Model model){
         Page<Message> page = messageService.queryMessage(pageable);
         model.addAttribute("page",page);

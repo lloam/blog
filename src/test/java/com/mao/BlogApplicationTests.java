@@ -19,12 +19,12 @@ class BlogApplicationTests {
 //        myRedisTemplate.opsForValue().increment("hh");
 //        System.out.println(myRedisTemplate.opsForValue().get("hh"));
 //    }
-    @Autowired
-    private RedisUtil redisUtil;
-    @Test
-    void contextLoads() {
-        redisUtil.set("mao","1");
-        System.out.println(redisUtil.get("mao"));
-    }
+//    @Autowired
+//    private RedisUtil redisUtil;
+//    @Test
+//    void contextLoads() {
+//        redisUtil.incr("views",1);
+//        System.out.println(redisUtil.get("views"));
+//    }
 
 }

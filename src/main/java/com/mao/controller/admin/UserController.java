@@ -48,15 +48,21 @@ public class UserController {
                           RedirectAttributes attributes){
         User userAddOrUp = null;
         if(user.getId()==null){
-            // 添加用户
-            userAddOrUp = userService.registerUser(user);
-            if(userAddOrUp == null){
-                attributes.addFlashAttribute("message","注册失败");
-                return "redirect:/admin/register/register/register/forSecurity";
-            }else {
-                System.out.println(userAddOrUp);
-                attributes.addFlashAttribute("message","注册成功");
+            // 判断是否有该用户名
+            User byUsername = userService.findByUsername(user.getUsername());
+            if(byUsername != null){
+                attributes.addFlashAttribute("message","已有该用户名，请登录");
                 return "redirect:/admin";
+            }else {
+                // 添加用户
+                userAddOrUp = userService.registerUser(user);
+                if(userAddOrUp == null){
+                    attributes.addFlashAttribute("message","注册失败");
+                    return "redirect:/admin/register/register/register/forSecurity";
+                }else {
+                    attributes.addFlashAttribute("message","注册成功");
+                    return "redirect:/admin";
+                }
             }
         }else {
             // 更新用户
