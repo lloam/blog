@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<span class="js-cursor-container"></span>
     <!--导航-->
     <nav th:replace="fragment/_fragments_front :: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
@@ -39,7 +39,7 @@
         <div class="ui container">
 
             <!--header-->
-            <div class="ui top attached segment">
+            <div class="ui secondary top attached segment">
                 <div class="ui middle aligned two column grid">
                     <div class="column">
                         <h3 class="ui teal header">分类</h3>
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="ui attached segment m-padded-tb-large">
+            <div class="ui secondary attached segment m-padded-tb-large">
 
                 <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
                     <a href="#" th:href="@{/types/{id}(id=${type.id})}" th:classappend="${type.id == activeTypeId} ? 'teal'" class="ui basic button" th:text="${type.name}">思考与感悟</a>
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="ui top attached teal segment">
+            <div class="ui secondary top attached teal segment">
                 <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
                     <div class="ui middle aligned mobile reversed stackable grid">
                         <div class="eleven wide column">

@@ -1,14 +1,21 @@
+* {
+    margin: 0 auto;
+}
+
     body {
+        /*
         background: url("https://gitee.com/lloamhh/spring-img/raw/master/img/blog/831.jpg");
         background-attachment:fixed;
         background-size: 100%;
         no-repeat: center top;
+         */
+        background-color: #fff;
         height: 100%;
         width: 100%;
     }
     .m-bg{
         width: 100%;
-        height: 650px;
+        height: 30%;
         object-fit: cover;
     }
     .m-body-login {
@@ -29,7 +36,6 @@
     .m-padded-tb-mini {
         padding-top: 0.2em !important;
         padding-bottom: 0.2em !important;
-        padding-right: 0.2em !important;
     }
     
     .m-padded-tb-tiny {
@@ -56,7 +62,7 @@
     .m-padded-tb-big {
         padding-top: 3em !important;
         padding-bottom: 3em !important;
-        padding-left: 3em !important;
+
     }
     
     .m-padded-tb-huge {
@@ -76,10 +82,14 @@
         padding-right: 4em !important;
     }
     /*------text------*/
+
+    .m-text-header {
+        font-size: 1em !important;
+    }
     
     .m-text {
         font-weight: 300 !important;
-        letter-spacing: 1px !important;
+        letter-spacing: 0.05em !important;
         line-height: 1.8;
     }
     
@@ -88,33 +98,23 @@
     }
     
     .m-text-spaced {
-        letter-spacing: 1px !important;
+        letter-spacing: 0.05em !important;
     }
     
     .m-text-lined {
         line-height: 1.8;
     }
-    .m-font-size-title-large{
-        font-size: 30px;
-        color: #ffffff;
-        font-family: STSong;
-    }
 
-    .m-font-size-title{
-        font-size: 400%;
-        color: #00b5ad;
-        font-family: Accordion;
-    }
     .m-font-size-text-init-title{
-        font-size: 30px;
+        font-size: 2em;
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #FF512F;
         font-weight: 700;
-        text-shadow: 0px 0px 7px #ffd800;
+        text-shadow: 0 0 0.1em #ffd800;
         background-image: linear-gradient(90deg, #ffd800 0%, #ff512f 100%, #fff);
-        animation: glow-animation 5s infinite linear;
+        animation: glow-animation 3s infinite linear;
         color: #FFC0CB;
         box-sizing: border-box;
         vertical-align: inherit;
@@ -122,6 +122,39 @@
     @keyframes glow-animation{
         0%{filter:hue-rotate(-360deg)}
         100%{filter:hue-rotate(360deg)}
+    }
+
+    .blog-bigger {
+        background-color: #000;
+    }
+
+    /*********但愿人长久字体设置**********/
+    .m-font-size-text-color{
+        font-size: 1.5em !important;
+        font-family: 'STXingkai' !important;
+        /*background-clip: border-box;*/
+        /*-webkit-background-clip: text;*/
+        /*-webkit-text-fill-color: transparent;*/
+        color: #ff0000;
+        font-weight: 700;
+        text-shadow: 0 0 0.1em #3639ff;
+        animation: glow-animation 7s infinite linear;
+        color: #ffeb3b;
+        box-sizing: border-box;
+        vertical-align: inherit;
+    }
+    .m-font-size-text-color-small {
+        font-size: 1.1em !important;
+        /*background-clip: border-box;*/
+        /*-webkit-background-clip: text;*/
+        /*-webkit-text-fill-color: transparent;*/
+        color: #ff0000;
+        font-weight: 700;
+        text-shadow: 0 0 0.1em #3639ff;
+        animation: glow-animation 7s infinite linear;
+        color: #35bdb2;
+        box-sizing: border-box;
+        vertical-align: inherit;
     }
     /*------margin------*/
     
@@ -163,7 +196,7 @@
     
     .m-right-top {
         position: absolute;
-        top: 0;
+        top: -0.6em;
         right: 0;
     }
     /*------display------*/
@@ -174,12 +207,12 @@
     /*------container------*/
     
     .m-container-small {
-        max-width: 60em !important;
+        max-width: 100% !important;
         margin: auto !important;
     }
     
     .m-container {
-        max-width: 72em !important;
+        max-width: 100% !important;
         margin: auto !important;
     }
     /*------shadow------*/
@@ -210,26 +243,32 @@
     .m-mobile-show {
         display: none !important;
     }
+
+    .m-back-color {
+        background-color: #f4f5f6 !important;
+    }
     /*------picture------*/
     .m-picture-big {
-        width: 800px !important;
-        height: 450px !important;
+        width: 50em !important;
+        height: 20em !important;
+    }
+    .m-picture-aboutme {
+        width: 50em !important;
+        height: 30em !important;
     }
     .m-picture-middle {
-        width: 180px !important;
-        height: 120px !important;
+        width: 13em !important;
+        height: 9em !important;
     }
     /*------picture------*/
-    .m-li-margin {
-        margin-left: -50px;
-    }
-    
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 768px) {
         .m-mobile-hide {
             display: none !important;
         }
         .m-mobile-show {
             display: block !important;
+            padding-top: 0.8em !important;
+            background: grey !important;
         }
         .m-padded-lr-responsive {
             padding-left: 0 !important;
@@ -242,43 +281,10 @@
         .m-mobile-wide {
             width: 100% !important;
         }
-        .m-mobile-picture {
-            width: 100% !important;
-            height: 100% !important;
-        }
+
     }
 
     /*遮罩层*/
-    .class_outer {
-        display: block;
-        /*width: 550px;*/
-        /*height: 276px;*/
-        margin: 10px auto 0;
-        position: relative;
-        overflow: hidden;
-    }
-    .class_cover {
-        width: 100%;
-        height: 40px;
-        line-height: 50px;
-        padding-left: 6px;
-        background-color: rgba(0, 0, 0, .60);
-        /*color: #FFFFFF;*/
-        /*font-size: 26px;*/
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-    }
-
-    .m-bg-class_outer {
-        display: block;
-        /*width: 550px;*/
-        /*height: 276px;*/
-        /*margin: 10px auto 0 0;*/
-        position: relative;
-        overflow: hidden;
-    }
-
     .m-bg-type_outer {
         display: block;
         /*margin: 10px auto 0 0;*/
@@ -289,9 +295,9 @@
 
     .m-bg-class_cover {
         width: 100%;
-        height: 750px;
-        line-height: 50px;
-        padding-left: 6px;
+        height: 60em;
+        line-height: 3em;
+        padding-left: 0.3em;
         background-color: rgba(0, 0, 0, .60);
         /*color: #FFFFFF;*/
         /*font-size: 26px;*/

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+<span class="js-cursor-container"></span>
     <!--导航-->
     <nav th:replace="fragment/_fragments_front :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
@@ -39,10 +39,10 @@
     </nav>
 
     <!--中间内容-->
-    <div id="waypoint" class="m-container-small m-padded-tb-big m-opacity animate__animated animate__fadeInDown">
+    <div id="waypoint" class="m-container-small  m-padded-tb-big m-opacity animate__animated animate__fadeInDown">
         <div class="ui container">
 
-            <div class="ui top attached segment">
+            <div class="ui secondary top attached segment">
                 <div class="ui horizontal link list">
                     <div class="item">
                         <img src="https://unsplash.it/100/100?image=1005" th:src="${blog.user.avatar}" alt="" class="ui avatar image">
@@ -58,12 +58,12 @@
             </div>
 
 
-            <div class="ui center aligned attached segment">
+            <div class="ui secondary center aligned attached segment">
                 <!--图片区域-->
-                <img src="https://unsplash.it/800/450?image=1006" th:src="@{${blog.firstPicture}}" alt="" class="ui fluid rounded image m-picture-big m-mobile-picture">
+                <img src="https://unsplash.it/800/450?image=1006" th:src="@{${blog.firstPicture}}" alt="" class="ui fluid rounded image m-picture-big">
             </div>
 
-            <div class="ui attached padded segment">
+            <div class="ui secondary attached padded segment">
                 <!--内容区域-->
                 <div class="ui right aligned basic segment">
                     <div class="ui orange basic label" th:text="${blog.flag}">原创</div>
@@ -494,12 +494,12 @@ h5,h6{font-size:1em;}
                         <div class="ui images" style="font-size: inherit !important;">
 
                             <div class="image">
-                                <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded bordered image"
+                                <img src="../static/images/alipay-receive.jpg" th:src="@{/images/alipay-receive.jpg}" alt="" class="ui rounded bordered image"
                                      style="width: 120px;">
                                 <div>支付宝支付</div>
                             </div>
                             <div class="image">
-                                <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded bordered image"
+                                <img src="../static/images/wechat-receive.png" th:src="@{/images/wechat-receive.png}" alt="" class="ui rounded bordered image"
                                      style="width: 120px;">
                                 <div>微信支付</div>
                             </div>
@@ -511,12 +511,12 @@ h5,h6{font-size:1em;}
 
 
             <!--转载声明-->
-            <div class="ui attached positive message" th:if="${blog.shareStatement}">
+            <div class="ui secondary attached positive message" th:if="${blog.shareStatement}">
                 <!--博客信息-->
                 <div class="ui middle aligned grid">
                     <div class="eleven wide column">
                         <ui class="list">
-                            <li>作者：<span th:text="${blog.user.nickname}">王大双</span><a href="#" th:href="@{/about}">（联系作者）</a></li>
+                            <li>作者：<span th:text="${blog.user.nickname}">王大双</span><a href="#" th:href="@{/about(title='关于我')}">（联系作者）</a></li>
                             <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2021-05-16 00:30</span></li>
                             <li>版本声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
                             <li>公众号转载：请文末添加作者公众号二维码</li>
@@ -524,14 +524,14 @@ h5,h6{font-size:1em;}
                     </div>
 
                     <div class="five wide column">
-                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui right floated rounded bordered image"
+                        <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui right floated rounded bordered image"
                              style="width: 110px;">
                     </div>
                 </div>
             </div>
 
 
-            <div class="ui bottom attached segment" th:if="${blog.commentable}">
+            <div class="ui secondary bottom attached segment" th:if="${blog.commentable}">
                 <!--留言区域列表-->
                 <div id="comment-container" class="ui teal segment">
                     <div th:fragment="commentList">
@@ -702,7 +702,7 @@ h5,h6{font-size:1em;}
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
-                            <img src="../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                            <img src="../static/images/wechat.png" class="ui rounded image" alt="" style="width: 110px">
                         </div>
                     </div>
                 </div>

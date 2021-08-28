@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<span class="js-cursor-container"></span>
     <!--导航-->
     <nav th:replace="fragment/_fragments_front :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
@@ -28,7 +29,7 @@
             </div>
         </div>
         <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
-            <i class="sidebar icon"></i>
+            <i class="sidebar icon center aligned"></i>
         </a>
     </nav>
 
@@ -39,9 +40,9 @@
                 <!--左边博客列表-->
                 <div class="eleven wide column animate__animated animate__bounce">
                     <!--header-->
-                    <div class="ui top attached segment animate__fadeInDown">
+                    <div class="secondary ui top attached segment">
                         <div class="ui middle aligned two column grid">
-                            <div class="column">
+                            <div class="column m-font-size-text-color-small">
                                 <h3 class="ui teal header">博客</h3>
                             </div>
                             <div class="right aligned column">
@@ -52,9 +53,9 @@
                     </div>
 
                     <!--Content-->
-                    <div class="ui top attached segment">
+                    <div class="ui secondary teal top attached segment">
                         <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
-                            <div class="ui middle aligned mobile reversed stackable grid">
+                            <div class="ui middle aligned mobile reversed stackable grid blog">
                                 <div class="eleven wide column">
                                     <h3 class="ui header">
                                         <a href="#" class="m-black" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" th:text="${blog.title}">你真的理解什么是财富自由吗？</a>
@@ -110,7 +111,7 @@
                     <!--分类-->
                     <div class="ui segments animate__animated animate__fadeInRight">
                         <div class="ui secondary segment">
-                            <div class="ui two column grid">
+                            <div class="ui two column grid m-font-size-text-color-small">
                                 <div class="column">
                                     <i class="idea icon"></i>分类
                                 </div>
@@ -130,9 +131,9 @@
                     </div>
 
                     <!--标签-->
-                    <div class="segments animate__animated animate__fadeInRight">
+                    <div class="ui segments animate__animated animate__fadeInRight">
                         <div class="ui secondary segment">
-                            <div class="ui two column grid">
+                            <div class="ui two column grid m-font-size-text-color-small">
                                 <div class="column">
                                     <i class="tags icon"></i>标签
                                 </div>
@@ -142,17 +143,19 @@
                             </div>
                         </div>
                         <div class="ui teal segment">
-                            <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
-                                <span th:text="${tag.name}">方法论</span>
-                                <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
-                            </a>
+                            <div class="ui fluid vertical menu">
+                                <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
+                                    <span th:text="${tag.name}">方法论</span>
+                                    <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!--最新推荐 -->
                     <div class="ui segments m-margin-top-large animate__animated animate__fadeInRight">
-                        <div class="ui secondary segment">
-                            <div class="column">
+                        <div class="ui secondary secondary segment">
+                            <div class="column m-font-size-text-color-small">
                                 <i class="bookmark icon"></i>最新推荐
                             </div>
                             <div class="ui segment" th:each="blog : ${recommendBlogs}">
@@ -164,7 +167,7 @@
                     <!--二维码-->
                     <h4 class="ui horizontal divider header m-margin-top-large">扫码关注我</h4>
                     <div class="ui centered card" style="width: 15em;">
-                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image">
+                        <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded image">
                     </div>
 
 
@@ -228,5 +231,4 @@
        });
    </script>
 </body>
-
 </html>

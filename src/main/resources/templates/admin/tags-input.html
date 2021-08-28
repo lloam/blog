@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+<span class="js-cursor-container"></span>
     <!--导航-->
     <nav th:replace="fragment/_fragments_admin :: menu(3)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
@@ -52,7 +52,6 @@
     <div class="m-container-small m-padded-tb-big">
         <div class="ui container">
             <form action="#" method="post" class="ui form" th:object="${tag}" th:action="*{id}==null ? @{/admin/tags} : @{/admin/tags/{id}(id=*{id})}">
-                <input  name="id" th:value="*{id}" />
                 <input type="hidden" name="_method" value="put" th:unless="*{id}==null"/>
                 <div class="field">
                     <div class="ui left labeled input">

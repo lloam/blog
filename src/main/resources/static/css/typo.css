@@ -1,486 +1,407 @@
-@charset "utf-8";
-.typo p {
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./github/open-sans-v17-latin-ext_latin-regular.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* open-sans-italic - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('./github/open-sans-v17-latin-ext_latin-italic.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* open-sans-700 - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('./github/open-sans-v17-latin-ext_latin-700.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* open-sans-700italic - latin-ext_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('./github/open-sans-v17-latin-ext_latin-700italic.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+html {
     font-size: 16px;
-    font-weight: 300;
-    line-height: 1.8;
-    text-align: justify;
 }
 
-.typo li {
-    font-weight: 300;
-    padding: 4px 0;
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
 }
 
-/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
-.typo article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-menu,
-nav,
-section {
-    display: block;
+#write {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 100px;
 }
 
-
-/* HTML5 媒体文件跟 img 保持一致 */
-
-.typo audio,
-canvas,
-video {
-    display: inline-block;
-}
-
-
-/* 要注意表单元素并不继承父级 font 的问题 */
-
-.typo button,
-input,
-select,
-textarea {
-    font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
-}
-
-.typo button::-moz-focus-inner,
-.typo input::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-
-/* 去掉各Table cell 的边距并让其边重合 */
-
-.typo table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* 去除默认边框 */
-
-.typo fieldset,
-img {
-    border: 0;
-}
-
-
-/* 块/段落引用 */
-
-.typo blockquote {
-    position: relative;
-    color: #999;
-    font-weight: 400;
-    border-left: 1px solid #1abc9c;
-    padding-left: 1em;
-    margin: 1em 3em 1em 2em;
-}
-
-@media only screen and ( max-width: 640px) {
-    .typo blockquote {
-        margin: 1em 0;
+@media only screen and (min-width: 1400px) {
+    #write {
+        max-width: 1024px;
     }
 }
 
-
-/* Firefox 以外，元素没有下划线，需添加 */
-
-.typo acronym,
-abbr {
-    border-bottom: 1px dotted;
-    font-variant: normal;
+@media only screen and (min-width: 1800px) {
+    #write {
+        max-width: 1200px;
+    }
 }
 
-
-/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
-
-.typo abbr {
-    cursor: help;
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
 }
 
-
-/* 一致的 del 样式 */
-
-.typo del {
-    text-decoration: line-through;
+a {
+    color: #4183C4;
 }
-
-.typo address,
-caption,
-cite,
-code,
-dfn,
-em,
-th,
-var {
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
-
-.typo ul,
-ol {
-    list-style: none;
-}
-
-
-/* 对齐是排版最重要的因素, 别让什么都居中 */
-
-.typo caption,
-th {
-    text-align: left;
-}
-
-.typo q:before,
-.typo q:after {
-    content: '';
-}
-
-
-/* 统一上标和下标 */
-
-.typo sub,
-.typo sup {
-    font-size: 75%;
-    line-height: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     position: relative;
-}
-
-.typo :root sub,
-.typo :root sup {
-    vertical-align: baseline;
-    /* for ie9 and other modern browsers */
-}
-
-.typo sup {
-    top: -0.5em;
-}
-
-.typo sub {
-    bottom: -0.25em;
-}
-
-
-/* 让链接在 hover 状态下显示下划线 */
-
-.typo a {
-    color: #1abc9c;
-}
-
-.typo a:hover {
-    text-decoration: underline;
-}
-
-.typo a {
-    border-bottom: 1px solid #1abc9c;
-}
-
-.typo a:hover {
-    border-bottom-color: #555;
-    color: #555;
-    text-decoration: none;
-}
-
-
-/* 默认不显示下划线，保持页面简洁 */
-
-.typo ins,
-.typo a {
-    text-decoration: none;
-}
-
-
-/* 专名号：虽然 u 已经重回 html5 Draft，但在所有浏览器中都是可以使用的，
- * 要做到更好，向后兼容的话，添加 class="typo-u" 来显示专名号
- * 关于 <u> 标签：http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
- * 被放弃的是 4，之前一直搞错 http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
- * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/
- */
-
-.typo u,
-.typo .typo-u {
-    text-decoration: underline;
-}
-
-
-/* 标记，类似于手写的荧光笔的作用 */
-
-.typo mark {
-    background: #fffdd1;
-    border-bottom: 1px solid #ffedce;
-    padding: 2px;
-    margin: 0 5px;
-}
-
-
-/* 代码片断 */
-
-.typo pre,
-.typo code,
-.typo pre tt {
-    font-family: Courier, 'Courier New', monospace;
-}
-
-.typo pre {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 1em 1.5em;
-    display: block;
-    -webkit-overflow-scrolling: touch;
-}
-
-
-/* 一致化 horizontal rule */
-
-.typo hr {
-    border: none;
-    border-bottom: 1px solid #cfcfcf;
-    margin-bottom: 0.8em;
-    height: 10px;
-}
-
-
-/* 底部印刷体、版本等标记 */
-
-.typo small,
-.typo .typo-small,
-
-    /* 图片说明 */
-
-.typo figcaption {
-    font-size: 0.9em;
-    color: #888;
-}
-
-.typo strong,
-.typo b {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: bold;
-    color: #000;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
 }
 
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
 
-/* 可拖动文件添加拖动手势 */
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
 
-.typo [draggable] {
-    cursor: move;
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
 }
 
-.typo .clearfix:before,
-.typo .clearfix:after {
-    content: "";
-    display: table;
+li p.first {
+    display: inline-block;
 }
-
-.typo .clearfix:after {
-    clear: both;
+ul,
+ol {
+    padding-left: 30px;
 }
-
-.typo .clearfix {
-    zoom: 1;
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
 }
-
-
-/* 强制文本换行 */
-
-.typo .textwrap,
-.typo .textwrap td,
-.typo .textwrap th {
-    word-wrap: break-word;
-    word-break: break-all;
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
 }
-
-.typo .textwrap-table {
-    table-layout: fixed;
-}
-
-
-/* 提供 serif 版本的字体设置: iOS 下中文自动 fallback 到 sans-serif */
-
-.typo .serif {
-    font-family: Palatino, Optima, Georgia, serif;
-}
-
-
-/* 保证块/段落之间的空白隔行 */
-
-.typo p,
-.typo pre,
-.typo ul,
-.typo ol,
-.typo dl,
-.typo form,
-.typo hr,
-.typo table,
-.typo-p,
-.typo-pre,
-.typo-ul,
-.typo-ol,
-.typo-dl,
-.typo-form,
-.typo-hr,
-.typo-table,
 blockquote {
-    margin-bottom: 1.2em
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
 }
 
-.typo h1,
-.typo h2,
-.typo h3,
-.typo h4,
-.typo h5,
-.typo h6 {
-    font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
-    font-weight: 100;
-    color: #000;
-    line-height: 1.35;
+.CodeMirror-lines {
+    padding-left: 4px;
 }
 
-
-/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
-
-.typo h1,
-.typo h2,
-.typo h3,
-.typo h4,
-.typo h5,
-.typo h6,
-.typo-h1,
-.typo-h2,
-.typo-h3,
-.typo-h4,
-.typo-h5,
-.typo-h6 {
-    margin-top: 1.2em;
-    margin-bottom: 0.6em;
-    line-height: 1.35;
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
 }
 
-.typo h1,
-.typo-h1 {
-    font-size: 2em;
+.md-fences,
+code,
+tt {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
 }
 
-.typo h2,
-.typo-h2 {
-    font-size: 1.8em;
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
 }
 
-.typo h3,
-.typo-h3 {
-    font-size: 1.6em;
-}
-
-.typo h4,
-.typo-h4 {
-    font-size: 1.4em;
-}
-
-.typo h5,
-.typo h6,
-.typo-h5,
-.typo-h6 {
-    font-size: 1.2em;
-}
-
-
-/* 在文章中，应该还原 ul 和 ol 的样式 */
-
-.typo ul,
-.typo-ul {
-    margin-left: 1.3em;
-    list-style: disc;
-}
-
-.typo ol,
-.typo-ol {
-    list-style: decimal;
-    margin-left: 1.9em;
-}
-
-.typo li ul,
-.typo li ol,
-.typo-ul ul,
-.typo-ul ol,
-.typo-ol ul,
-.typo-ol ol {
-    margin-bottom: 0.8em;
-    margin-left: 2em;
-}
-
-.typo li ul,
-.typo-ul ul,
-.typo-ol ul {
-    list-style: circle;
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
 
-/* 同 ul/ol，在文章中应用 table 基本格式 */
-
-.typo table th,
-.typo table td,
-.typo-table th,
-.typo-table td,
-.typo table caption {
-    border: 1px solid #ddd;
-    padding: 0.5em 1em;
-    color: #666;
+.md-task-list-item > input {
+    margin-left: -1.3em;
 }
 
-.typo table th,
-.typo-table th {
-    background: #fbfbfb;
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
 }
 
-.typo table thead th,
-.typo-table thead th {
-    background: #f1f1f1;
+.md-fences {
+    background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
 }
 
-.typo table caption {
+.mathjax-block>.code-tooltip {
+    bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+    left: -1.5625rem;
+    top: .375rem;
+}
+#write>h4.md-focus:before{
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+#write>h5.md-focus:before{
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+#write>h6.md-focus:before{
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc {
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
     border-bottom: none;
 }
 
-
-/* 去除 webkit 中 input 和 textarea 的默认样式  */
-
-.typo-input,
-.typo-textarea {
-    -webkit-appearance: none;
-    border-radius: 0;
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
 }
 
-.typo-em,
-.typo em,
-legend,
-caption {
-    color: #000;
-    font-weight: inherit;
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
 }
 
-
-/* 着重号，只能在少量（少于100个字符）且全是全角字符的情况下使用 */
-
-.typo-em {
-    position: relative;
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-.typo-em:after {
-    position: absolute;
-    top: 0.65em;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    content: "・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・";
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
 }
 
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
 
-/* Responsive images */
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
 
-.typo img {
-    max-width: 100%;
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
 }
